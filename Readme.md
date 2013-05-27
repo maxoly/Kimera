@@ -24,11 +24,10 @@ The code is supplied "as is". Use at your own risks.
 Don't use NSLog, instead use a simple macro
 
 
-```
+```objc
 #if defined DEBUG
     #define KRMLog(s, ...) NSLog((@"%s [Line %d] " s), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
     #define KRMLog(s, ...)
 #endif
-
-
+```
