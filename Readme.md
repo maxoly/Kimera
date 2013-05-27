@@ -1,6 +1,6 @@
-= Project Architecture =
+# Project Architecture
 
-== Folder Structure ==
+## Folder Structure
 
 * KimeraMobile: contains all project files and resources.
 * * Application: contains all file related to main, UIApplication, AppDelegate and project plist
