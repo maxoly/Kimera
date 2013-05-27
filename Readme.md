@@ -17,11 +17,26 @@ The code is supplied "as is". Use at your own risks.
         * change Build Settings -> Info Plist file (INFOPLIST_FILE) for plist file
         * change Build Settings -> Prefix Header (GCC_PREFIX_HEADER)
         
-## Advanced Debugging
+### Application Layer
+
+#### Presentation Layer
+
+TBD
+
+#### DomainModel Layer
+
+TBD
+
+#### Networking Layer
+
+TBD
+
+
+## Debugging
 
 ### Use Marco
 
-Don't use NSLog, instead use a simple macro
+Don't use standard NSLog, instead use a simple macro
 
 
 ```objc
