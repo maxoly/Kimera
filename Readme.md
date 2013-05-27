@@ -10,7 +10,7 @@ The code is supplied "as is". Use at your own risks.
 
 # Kimera Mobile
 
-Kimera Mobile represents the typical iOS application client / server.
+Kimera Mobile represents the typical client/server iOS application.
 
 
 ## Project Architecture
@@ -21,17 +21,17 @@ Kimera Mobile represents the typical iOS application client / server.
     * change Build Settings -> Info Plist file (INFOPLIST_FILE) for plist file
     * change Build Settings -> Prefix Header (GCC_PREFIX_HEADER)
         
-### Application Layer
+## Application Layer
 
-#### Presentation Layer
-
-TBD
-
-#### DomainModel Layer
+### Presentation Layer
 
 TBD
 
-#### Networking Layer
+### DomainModel Layer
+
+TBD
+
+### Networking Layer
 
 TBD
 
