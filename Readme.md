@@ -1,3 +1,9 @@
+# Kimera
+
+Welcome to Kimera.
+
+[![Build Status](https://travis-ci.org/maxoly/Kimera.png?branch=master)](https://travis-ci.org/maxoly/Kimera)
+
 # Project Architecture
 
 ## Folder Structure
