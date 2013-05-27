@@ -1,1 +1,3 @@
 language: objective-c
+
+script: xcodebuild -workspace Kimera.xcworkspace -scheme KimeraMobile

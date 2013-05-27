@@ -29,6 +29,12 @@
 		562FE97617540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
 		562FE97717540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
 		562FE97B17540B43004DC70D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 562FE97A17540B43004DC70D /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		562FE98217540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */; };
+		562FE98317540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */; };
+		562FE98417540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */; };
+		562FE98517540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */; };
+		562FE98717540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */; };
+		562FE98817540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,10 @@
 		562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeViewController~iphone.xib"; sourceTree = "<group>"; };
 		562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeViewController~ipad.xib"; sourceTree = "<group>"; };
 		562FE97A17540B43004DC70D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		562FE97F17540D8A004DC70D /* KMRMMrcIssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMMrcIssueViewController.h; sourceTree = "<group>"; };
+		562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMMrcIssueViewController.m; sourceTree = "<group>"; };
+		562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMMrcIssueViewController~iphone.xib"; sourceTree = "<group>"; };
+		562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMMrcIssueViewController~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +278,8 @@
 		56162B901753FD1900C7705E /* Debugging */ = {
 			isa = PBXGroup;
 			children = (
+				562FE97D17540D72004DC70D /* ArcIssues */,
+				562FE97E17540D72004DC70D /* MrcIssues */,
 			);
 			path = Debugging;
 			sourceTree = "<group>";
@@ -307,6 +319,24 @@
 				562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		562FE97D17540D72004DC70D /* ArcIssues */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArcIssues;
+			sourceTree = "<group>";
+		};
+		562FE97E17540D72004DC70D /* MrcIssues */ = {
+			isa = PBXGroup;
+			children = (
+				562FE97F17540D8A004DC70D /* KMRMMrcIssueViewController.h */,
+				562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */,
+				562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */,
+				562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */,
+			);
+			path = MrcIssues;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +419,8 @@
 				56162B8C1753FCD000C7705E /* Default@2x.png in Resources */,
 				562FE97317540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */,
 				562FE97617540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */,
+				562FE98417540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */,
+				562FE98717540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +431,8 @@
 				56162B591753F52B00C7705E /* InfoPlist.strings in Resources */,
 				562FE97417540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */,
 				562FE97717540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */,
+				562FE98517540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */,
+				562FE98817540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +462,7 @@
 				56162B6C1753F62200C7705E /* KMRMAppDelegate.m in Sources */,
 				56162B6D1753F62200C7705E /* main.m in Sources */,
 				562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */,
+				562FE98217540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +472,7 @@
 			files = (
 				56162B5C1753F52B00C7705E /* KimeraMobileTests.m in Sources */,
 				562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */,
+				562FE98317540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
