@@ -8,12 +8,28 @@
 
 #import "KMRMAppDelegate.h"
 
+#import "KMRMHomeViewController.h"
+
+#ifdef TESTFLIGHT
+#import "TestFlight.h"
+#endif
+
 @implementation KMRMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    KRMLog(@"...starting");
+    
+#ifdef TESTFLIGHT
+    KRMLog(@"testflight...starting");   
+    [TestFlight takeOff:@"82d8b72c-8e1b-4578-b421-fc780a21ff1e"];
+    
+#endif
+    
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[KMRMHomeViewController alloc] init]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

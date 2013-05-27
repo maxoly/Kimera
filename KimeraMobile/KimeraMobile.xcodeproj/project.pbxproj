@@ -22,6 +22,13 @@
 		56162B8A1753FCD000C7705E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B871753FCD000C7705E /* Default-568h@2x.png */; };
 		56162B8B1753FCD000C7705E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B881753FCD000C7705E /* Default.png */; };
 		56162B8C1753FCD000C7705E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B891753FCD000C7705E /* Default@2x.png */; };
+		562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
+		562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
+		562FE97317540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */; };
+		562FE97417540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */; };
+		562FE97617540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
+		562FE97717540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
+		562FE97B17540B43004DC70D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 562FE97A17540B43004DC70D /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,13 @@
 		56162B871753FCD000C7705E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		56162B881753FCD000C7705E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		56162B891753FCD000C7705E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		562FE965175407AD004DC70D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		562FE968175407AD004DC70D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		562FE96E17540A37004DC70D /* KMRMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeViewController.h; sourceTree = "<group>"; };
+		562FE96F17540A37004DC70D /* KMRMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMHomeViewController.m; sourceTree = "<group>"; };
+		562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeViewController~iphone.xib"; sourceTree = "<group>"; };
+		562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeViewController~ipad.xib"; sourceTree = "<group>"; };
+		562FE97A17540B43004DC70D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562FE97B17540B43004DC70D /* libz.dylib in Frameworks */,
 				56162B311753F52A00C7705E /* UIKit.framework in Frameworks */,
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +121,7 @@
 		56162B2F1753F52A00C7705E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				562FE97A17540B43004DC70D /* libz.dylib */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
 				56162B321753F52A00C7705E /* Foundation.framework */,
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
@@ -243,6 +259,7 @@
 		56162B8F1753FD0200C7705E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				562FE96C17540A06004DC70D /* Common */,
 				56162B901753FD1900C7705E /* Debugging */,
 			);
 			path = Controllers;
@@ -258,8 +275,38 @@
 		56162B911753FD4B00C7705E /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				562FE964175407AD004DC70D /* TestFlightSDK */,
 			);
 			path = Vendors;
+			sourceTree = "<group>";
+		};
+		562FE964175407AD004DC70D /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				562FE965175407AD004DC70D /* libTestFlight.a */,
+				562FE968175407AD004DC70D /* TestFlight.h */,
+			);
+			name = TestFlightSDK;
+			path = TestFlightSDK1.2.5;
+			sourceTree = "<group>";
+		};
+		562FE96C17540A06004DC70D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				562FE96D17540A17004DC70D /* Home */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		562FE96D17540A17004DC70D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				562FE96E17540A37004DC70D /* KMRMHomeViewController.h */,
+				562FE96F17540A37004DC70D /* KMRMHomeViewController.m */,
+				562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */,
+				562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +387,8 @@
 				56162B8A1753FCD000C7705E /* Default-568h@2x.png in Resources */,
 				56162B8B1753FCD000C7705E /* Default.png in Resources */,
 				56162B8C1753FCD000C7705E /* Default@2x.png in Resources */,
+				562FE97317540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */,
+				562FE97617540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +397,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56162B591753F52B00C7705E /* InfoPlist.strings in Resources */,
+				562FE97417540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */,
+				562FE97717540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +427,7 @@
 			files = (
 				56162B6C1753F62200C7705E /* KMRMAppDelegate.m in Sources */,
 				56162B6D1753F62200C7705E /* main.m in Sources */,
+				562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56162B5C1753F52B00C7705E /* KimeraMobileTests.m in Sources */,
+				562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +546,10 @@
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -505,6 +562,10 @@
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -575,8 +636,14 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
+				OTHER_LDFLAGS = "-lTestFlight";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -632,6 +699,10 @@
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -677,6 +748,7 @@
 				56162B931753FDC300C7705E /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56162B621753F52B00C7705E /* Build configuration list for PBXNativeTarget "KimeraMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -687,6 +759,7 @@
 				56162B941753FDC300C7705E /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
