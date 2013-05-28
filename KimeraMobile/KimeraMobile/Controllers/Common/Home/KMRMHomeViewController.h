@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KMRMHomeViewController : UIViewController
+#import "KMRMTableViewController.h"
+
+@interface KMRMHomeViewController : KMRMTableViewController
 
 @end
