@@ -49,6 +49,22 @@
 		5648D5751754D89A00EE9C0E /* KMRMArcIssuesViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5731754D89A00EE9C0E /* KMRMArcIssuesViewController~ipad.xib */; };
 		5648D57A1754D92B00EE9C0E /* KMRMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5791754D92B00EE9C0E /* KMRMTableViewController.m */; };
 		5648D57B1754D92B00EE9C0E /* KMRMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5791754D92B00EE9C0E /* KMRMTableViewController.m */; };
+		5648D5D217553B2D00EE9C0E /* KMRMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5D117553B2D00EE9C0E /* KMRMTopic.m */; };
+		5648D5D317553B2D00EE9C0E /* KMRMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5D117553B2D00EE9C0E /* KMRMTopic.m */; };
+		5648D5D617553CEA00EE9C0E /* Kimera_Topics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5D517553CEA00EE9C0E /* Kimera_Topics.plist */; };
+		5648D5D717553CEA00EE9C0E /* Kimera_Topics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5D517553CEA00EE9C0E /* Kimera_Topics.plist */; };
+		5648D5DA17553EC500EE9C0E /* KMRMArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5D917553EC500EE9C0E /* KMRMArgument.m */; };
+		5648D5DB17553EC500EE9C0E /* KMRMArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5D917553EC500EE9C0E /* KMRMArgument.m */; };
+		5648D5DE175542A900EE9C0E /* KMRMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5DD175542A900EE9C0E /* KMRMDataModel.m */; };
+		5648D5DF175542A900EE9C0E /* KMRMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5DD175542A900EE9C0E /* KMRMDataModel.m */; };
+		5648D5E2175543C400EE9C0E /* KMRMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5E1175543C400EE9C0E /* KMRMBaseViewController.m */; };
+		5648D5E3175543C400EE9C0E /* KMRMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5E1175543C400EE9C0E /* KMRMBaseViewController.m */; };
+		5648D5E917554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */; };
+		5648D5EA17554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */; };
+		5648D5EB17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */; };
+		5648D5EC17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */; };
+		5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
+		5648D5EF17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +122,19 @@
 		5648D5731754D89A00EE9C0E /* KMRMArcIssuesViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMArcIssuesViewController~ipad.xib"; sourceTree = "<group>"; };
 		5648D5781754D92B00EE9C0E /* KMRMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMTableViewController.h; sourceTree = "<group>"; };
 		5648D5791754D92B00EE9C0E /* KMRMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMTableViewController.m; sourceTree = "<group>"; };
+		5648D5D017553B2D00EE9C0E /* KMRMTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMTopic.h; sourceTree = "<group>"; };
+		5648D5D117553B2D00EE9C0E /* KMRMTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMTopic.m; sourceTree = "<group>"; };
+		5648D5D517553CEA00EE9C0E /* Kimera_Topics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Kimera_Topics.plist; sourceTree = "<group>"; };
+		5648D5D817553EC500EE9C0E /* KMRMArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMArgument.h; sourceTree = "<group>"; };
+		5648D5D917553EC500EE9C0E /* KMRMArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMArgument.m; sourceTree = "<group>"; };
+		5648D5DC175542A900EE9C0E /* KMRMDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMDataModel.h; sourceTree = "<group>"; };
+		5648D5DD175542A900EE9C0E /* KMRMDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMDataModel.m; sourceTree = "<group>"; };
+		5648D5E0175543C400EE9C0E /* KMRMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMBaseViewController.h; sourceTree = "<group>"; };
+		5648D5E1175543C400EE9C0E /* KMRMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMBaseViewController.m; sourceTree = "<group>"; };
+		5648D5E617554CDB00EE9C0E /* KMRMLoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMLoggingViewController.h; sourceTree = "<group>"; };
+		5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLoggingViewController.m; sourceTree = "<group>"; };
+		5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~iphone.xib"; sourceTree = "<group>"; };
+		5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +199,7 @@
 				56162B651753F53200C7705E /* Application */,
 				56162B8F1753FD0200C7705E /* Controllers */,
 				5648D5761754D8FF00EE9C0E /* Library */,
+				5648D5CE17553AC600EE9C0E /* Models */,
 				56162B6E1753F70300C7705E /* Resources */,
 				56162B911753FD4B00C7705E /* Vendors */,
 			);
@@ -210,6 +240,7 @@
 		56162B6E1753F70300C7705E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5648D5D417553C9500EE9C0E /* Data */,
 				56162B851753FC9100C7705E /* Images */,
 				56162B7A1753F8EF00C7705E /* Themes */,
 				56162B6F1753F71F00C7705E /* Localizations */,
@@ -303,6 +334,7 @@
 		56162B901753FD1900C7705E /* Debugging */ = {
 			isa = PBXGroup;
 			children = (
+				5648D5E517554CBC00EE9C0E /* Logging */,
 				5648D5611754D80800EE9C0E /* Breakpoints */,
 				562FE97D17540D72004DC70D /* ArcIssues */,
 				562FE97E17540D72004DC70D /* MrcIssues */,
@@ -383,6 +415,7 @@
 		5648D5761754D8FF00EE9C0E /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5648D5CD17553AAD00EE9C0E /* Cells */,
 				5648D5771754D90F00EE9C0E /* Controllers */,
 			);
 			path = Library;
@@ -391,10 +424,51 @@
 		5648D5771754D90F00EE9C0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5648D5E0175543C400EE9C0E /* KMRMBaseViewController.h */,
+				5648D5E1175543C400EE9C0E /* KMRMBaseViewController.m */,
 				5648D5781754D92B00EE9C0E /* KMRMTableViewController.h */,
 				5648D5791754D92B00EE9C0E /* KMRMTableViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5648D5CD17553AAD00EE9C0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5648D5CE17553AC600EE9C0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5648D5D017553B2D00EE9C0E /* KMRMTopic.h */,
+				5648D5D117553B2D00EE9C0E /* KMRMTopic.m */,
+				5648D5D817553EC500EE9C0E /* KMRMArgument.h */,
+				5648D5D917553EC500EE9C0E /* KMRMArgument.m */,
+				5648D5DC175542A900EE9C0E /* KMRMDataModel.h */,
+				5648D5DD175542A900EE9C0E /* KMRMDataModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5648D5D417553C9500EE9C0E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5648D5D517553CEA00EE9C0E /* Kimera_Topics.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5648D5E517554CBC00EE9C0E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				5648D5E617554CDB00EE9C0E /* KMRMLoggingViewController.h */,
+				5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */,
+				5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */,
+				5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,6 +557,9 @@
 				5648D56A1754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib in Resources */,
 				5648D5711754D88000EE9C0E /* KMRMArcIssuesViewController~iphone.xib in Resources */,
 				5648D5741754D89A00EE9C0E /* KMRMArcIssuesViewController~ipad.xib in Resources */,
+				5648D5D617553CEA00EE9C0E /* Kimera_Topics.plist in Resources */,
+				5648D5EB17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */,
+				5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +576,9 @@
 				5648D56B1754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib in Resources */,
 				5648D5721754D88000EE9C0E /* KMRMArcIssuesViewController~iphone.xib in Resources */,
 				5648D5751754D89A00EE9C0E /* KMRMArcIssuesViewController~ipad.xib in Resources */,
+				5648D5D717553CEA00EE9C0E /* Kimera_Topics.plist in Resources */,
+				5648D5EC17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */,
+				5648D5EF17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +612,11 @@
 				5648D5651754D83A00EE9C0E /* KMRMBreakpointsViewController.m in Sources */,
 				5648D56F1754D88000EE9C0E /* KMRMArcIssuesViewController.m in Sources */,
 				5648D57A1754D92B00EE9C0E /* KMRMTableViewController.m in Sources */,
+				5648D5D217553B2D00EE9C0E /* KMRMTopic.m in Sources */,
+				5648D5DA17553EC500EE9C0E /* KMRMArgument.m in Sources */,
+				5648D5DE175542A900EE9C0E /* KMRMDataModel.m in Sources */,
+				5648D5E2175543C400EE9C0E /* KMRMBaseViewController.m in Sources */,
+				5648D5E917554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +630,11 @@
 				5648D5661754D83A00EE9C0E /* KMRMBreakpointsViewController.m in Sources */,
 				5648D5701754D88000EE9C0E /* KMRMArcIssuesViewController.m in Sources */,
 				5648D57B1754D92B00EE9C0E /* KMRMTableViewController.m in Sources */,
+				5648D5D317553B2D00EE9C0E /* KMRMTopic.m in Sources */,
+				5648D5DB17553EC500EE9C0E /* KMRMArgument.m in Sources */,
+				5648D5DF175542A900EE9C0E /* KMRMDataModel.m in Sources */,
+				5648D5E3175543C400EE9C0E /* KMRMBaseViewController.m in Sources */,
+				5648D5EA17554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

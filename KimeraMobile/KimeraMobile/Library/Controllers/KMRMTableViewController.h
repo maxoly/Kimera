@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KMRMTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+#import "KMRMBaseViewController.h"
+
+@interface KMRMTableViewController : KMRMBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *sections;

@@ -1,0 +1,6 @@
+[submodule "KimeraMobile/KimeraMobile/Vendors/NSLogger"]
+	path = KimeraMobile/KimeraMobile/Vendors/NSLogger
+	url = https://github.com/fpillet/NSLogger.git
+[submodule "KimeraMobile/KimeraMobile/Vendors/CocoaLumberjack"]
+	path = KimeraMobile/KimeraMobile/Vendors/CocoaLumberjack
+	url = https://github.com/robbiehanson/CocoaLumberjack.git

@@ -18,8 +18,15 @@
 {
     [super viewDidLoad];
     
+    // text
     self.title = NSLocalizedString(@"Kimera", nil);
-    self.sections = @[ @[ @"Breakpoints", @"ARC Issues", @"MRC Issues" ] ];
+
+    // load topics
+    [self.dataModel getTopics:^(NSArray *topics)
+    {
+        self.sections = topics;
+        [self.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,15 +49,32 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kHomeCellIdentifier];
     }
     
-    cell.textLabel.text = [[self.sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = @"Some other text to show";
+    KMRMTopic *topic = [self.sections objectAtIndex:indexPath.section];
+    KMRMArgument *argument = [topic.arguments objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = argument.name;
+    cell.detailTextLabel.text = argument.description;
     
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Debugging";
+    KMRMTopic *topic = [self.sections objectAtIndex:section];
+    return topic.name;
+}
+
+
+
+#pragma mark - UITableViewDelegate Methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    KMRMTopic *topic = [self.sections objectAtIndex:indexPath.section];
+    KMRMArgument *argument = [topic.arguments objectAtIndex:indexPath.row];
+    
+    UIViewController *viewController = [[argument.viewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
