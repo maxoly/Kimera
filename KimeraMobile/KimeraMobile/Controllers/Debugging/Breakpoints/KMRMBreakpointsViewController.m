@@ -14,25 +14,47 @@
 
 @implementation KMRMBreakpointsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
+
+#pragma mark - View Lifeycle Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidUnload
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidUnload];
+}
+
+
+
+#pragma mark - Action Methods
+
+- (IBAction)exceptionTouched:(id)sender
+{
+    NSArray *array = @[ @1, @2, @3 ];
+    NSNumber *element = [array objectAtIndex:4];
+    NSLog(@"exception element: %@", element);
+}
+
+- (IBAction)symbolicTouched:(id)sender
+{
+    NSArray *array = @[ @1, @2, @3 ];
+    NSNumber *element = [array lastObject];
+    NSLog(@"symbolic element: %@", element);
+}
+
+- (IBAction)conditionalTouched:(id)sender
+{
+    NSArray *array = @[ @1, @2, @3 ];
+    
+    for (int i = 0; i < array.count; i++)
+    {
+        NSNumber *element = array[i];
+        NSLog(@"conditional element: %@", element);
+    }
 }
 
 @end

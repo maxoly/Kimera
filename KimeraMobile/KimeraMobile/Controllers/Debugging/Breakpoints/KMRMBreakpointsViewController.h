@@ -10,4 +10,9 @@
 
 @interface KMRMBreakpointsViewController : UIViewController
 
+- (IBAction)exceptionTouched:(id)sender;
+- (IBAction)symbolicTouched:(id)sender;
+- (IBAction)conditionalTouched:(id)sender;
+
+
 @end
