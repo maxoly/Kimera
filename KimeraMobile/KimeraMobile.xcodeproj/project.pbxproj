@@ -65,6 +65,18 @@
 		5648D5EC17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */; };
 		5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
 		5648D5EF17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
+		564FDB2D17568CCA00B637BC /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FD9AA17568CC900B637BC /* LoggerClient.m */; };
+		564FDC1417568D2C00B637BC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1317568D2C00B637BC /* CFNetwork.framework */; };
+		564FDC1617568D4600B637BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1517568D4600B637BC /* SystemConfiguration.framework */; };
+		564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */; };
+		564FDE2A175696A400B637BC /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */; };
+		564FDE2B175696A400B637BC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC38175696A200B637BC /* DDASLLogger.m */; };
+		564FDE2C175696A400B637BC /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3A175696A200B637BC /* DDFileLogger.m */; };
+		564FDE2D175696A400B637BC /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3C175696A200B637BC /* DDLog.m */; };
+		564FDE2E175696A400B637BC /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3E175696A200B637BC /* DDTTYLogger.m */; };
+		564FDE2F175696A400B637BC /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */; };
+		564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */; };
+		564FDE31175696A400B637BC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC44175696A200B637BC /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +147,27 @@
 		5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLoggingViewController.m; sourceTree = "<group>"; };
 		5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~iphone.xib"; sourceTree = "<group>"; };
 		5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~ipad.xib"; sourceTree = "<group>"; };
+		564FD9A917568CC900B637BC /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
+		564FD9AA17568CC900B637BC /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
+		564FD9AB17568CC900B637BC /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
+		564FDC1317568D2C00B637BC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		564FDC1517568D4600B637BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme_jackie_chan.jpg; sourceTree = "<group>"; };
+		564FDC35175696A200B637BC /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		564FDC37175696A200B637BC /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		564FDC38175696A200B637BC /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		564FDC39175696A200B637BC /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		564FDC3A175696A200B637BC /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		564FDC3B175696A200B637BC /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		564FDC3C175696A200B637BC /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		564FDC3D175696A200B637BC /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		564FDC3E175696A200B637BC /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		564FDC40175696A200B637BC /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		564FDC42175696A200B637BC /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		564FDC44175696A200B637BC /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564FDC1617568D4600B637BC /* SystemConfiguration.framework in Frameworks */,
+				564FDC1417568D2C00B637BC /* CFNetwork.framework in Frameworks */,
 				562FE97B17540B43004DC70D /* libz.dylib in Frameworks */,
 				56162B311753F52A00C7705E /* UIKit.framework in Frameworks */,
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
@@ -184,11 +219,13 @@
 		56162B2F1753F52A00C7705E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				562FE97A17540B43004DC70D /* libz.dylib */,
-				56162B301753F52A00C7705E /* UIKit.framework */,
-				56162B321753F52A00C7705E /* Foundation.framework */,
+				564FDC1317568D2C00B637BC /* CFNetwork.framework */,
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
+				56162B321753F52A00C7705E /* Foundation.framework */,
+				562FE97A17540B43004DC70D /* libz.dylib */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
+				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
+				56162B301753F52A00C7705E /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				56162B861753FC9E00C7705E /* App */,
+				564FDC191756918F00B637BC /* Memes */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -345,6 +383,8 @@
 		56162B911753FD4B00C7705E /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				564FDC1C175696A200B637BC /* CocoaLumberjack */,
+				564FD97B17568CC800B637BC /* NSLogger */,
 				562FE964175407AD004DC70D /* TestFlightSDK */,
 			);
 			path = Vendors;
@@ -471,6 +511,78 @@
 			path = Logging;
 			sourceTree = "<group>";
 		};
+		564FD97B17568CC800B637BC /* NSLogger */ = {
+			isa = PBXGroup;
+			children = (
+				564FD97D17568CC800B637BC /* Client Logger */,
+			);
+			path = NSLogger;
+			sourceTree = "<group>";
+		};
+		564FD97D17568CC800B637BC /* Client Logger */ = {
+			isa = PBXGroup;
+			children = (
+				564FD98C17568CC800B637BC /* iOS */,
+			);
+			path = "Client Logger";
+			sourceTree = "<group>";
+		};
+		564FD98C17568CC800B637BC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				564FD9A917568CC900B637BC /* LoggerClient.h */,
+				564FD9AA17568CC900B637BC /* LoggerClient.m */,
+				564FD9AB17568CC900B637BC /* LoggerCommon.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		564FDC191756918F00B637BC /* Memes */ = {
+			isa = PBXGroup;
+			children = (
+				564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */,
+			);
+			path = Memes;
+			sourceTree = "<group>";
+		};
+		564FDC1C175696A200B637BC /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				564FDC34175696A200B637BC /* Lumberjack */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		564FDC34175696A200B637BC /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				564FDC35175696A200B637BC /* DDAbstractDatabaseLogger.h */,
+				564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */,
+				564FDC37175696A200B637BC /* DDASLLogger.h */,
+				564FDC38175696A200B637BC /* DDASLLogger.m */,
+				564FDC39175696A200B637BC /* DDFileLogger.h */,
+				564FDC3A175696A200B637BC /* DDFileLogger.m */,
+				564FDC3B175696A200B637BC /* DDLog.h */,
+				564FDC3C175696A200B637BC /* DDLog.m */,
+				564FDC3D175696A200B637BC /* DDTTYLogger.h */,
+				564FDC3E175696A200B637BC /* DDTTYLogger.m */,
+				564FDC3F175696A200B637BC /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		564FDC3F175696A200B637BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				564FDC40175696A200B637BC /* ContextFilterLogFormatter.h */,
+				564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */,
+				564FDC42175696A200B637BC /* DispatchQueueLogFormatter.h */,
+				564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */,
+				564FDC44175696A200B637BC /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +639,7 @@
 			knownRegions = (
 				en,
 				it,
+				English,
 			);
 			mainGroup = 56162B241753F52A00C7705E;
 			productRefGroup = 56162B2E1753F52A00C7705E /* Products */;
@@ -560,6 +673,8 @@
 				5648D5D617553CEA00EE9C0E /* Kimera_Topics.plist in Resources */,
 				5648D5EB17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */,
 				5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */,
+				564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */,
+				564FDE31175696A400B637BC /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +732,14 @@
 				5648D5DE175542A900EE9C0E /* KMRMDataModel.m in Sources */,
 				5648D5E2175543C400EE9C0E /* KMRMBaseViewController.m in Sources */,
 				5648D5E917554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
+				564FDB2D17568CCA00B637BC /* LoggerClient.m in Sources */,
+				564FDE2A175696A400B637BC /* DDAbstractDatabaseLogger.m in Sources */,
+				564FDE2B175696A400B637BC /* DDASLLogger.m in Sources */,
+				564FDE2C175696A400B637BC /* DDFileLogger.m in Sources */,
+				564FDE2D175696A400B637BC /* DDLog.m in Sources */,
+				564FDE2E175696A400B637BC /* DDTTYLogger.m in Sources */,
+				564FDE2F175696A400B637BC /* ContextFilterLogFormatter.m in Sources */,
+				564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

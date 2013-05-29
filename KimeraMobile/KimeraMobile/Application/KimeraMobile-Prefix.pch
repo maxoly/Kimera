@@ -13,8 +13,10 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define kSuka 1
+
 #if defined DEBUG
-    #define KRMLog(s, ...) NSLog((@"%s [Line %d] " s), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    #define KMRLog(s, ...) NSLog((@"%s [Line %d] " s), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
-    #define KRMLog(s, ...)
+    #define KMRLog(s, ...)
 #endif

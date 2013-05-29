@@ -4,3 +4,6 @@
 [submodule "KimeraMobile/KimeraMobile/Vendors/CocoaLumberjack"]
 	path = KimeraMobile/KimeraMobile/Vendors/CocoaLumberjack
 	url = https://github.com/robbiehanson/CocoaLumberjack.git
+[submodule "KimeraMobile/KimeraMobile/Vendors/DMLogger"]
+	path = KimeraMobile/KimeraMobile/Vendors/DMLogger
+	url = git://github.com/malcommac/DMLogger.git
