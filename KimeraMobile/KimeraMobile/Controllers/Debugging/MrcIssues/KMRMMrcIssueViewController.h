@@ -10,4 +10,6 @@
 
 @interface KMRMMrcIssueViewController : UIViewController
 
+- (IBAction)zombieTouched:(id)sender;
+
 @end

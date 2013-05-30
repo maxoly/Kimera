@@ -13,6 +13,9 @@
 - (IBAction)exceptionTouched:(id)sender;
 - (IBAction)symbolicTouched:(id)sender;
 - (IBAction)conditionalTouched:(id)sender;
-
+- (IBAction)loggingTouched:(id)sender;
+- (IBAction)debuggerTouched:(id)sender;
+- (IBAction)soundTouched:(id)sender;
+- (IBAction)speakerTouched:(id)sender;
 
 @end

@@ -29,7 +29,7 @@
 		562FE97617540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
 		562FE97717540A5D004DC70D /* KMRMHomeViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97517540A5C004DC70D /* KMRMHomeViewController~ipad.xib */; };
 		562FE97B17540B43004DC70D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 562FE97A17540B43004DC70D /* libz.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
-		562FE98217540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */; };
+		562FE98217540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		562FE98317540D8A004DC70D /* KMRMMrcIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */; };
 		562FE98417540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */; };
 		562FE98517540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */; };

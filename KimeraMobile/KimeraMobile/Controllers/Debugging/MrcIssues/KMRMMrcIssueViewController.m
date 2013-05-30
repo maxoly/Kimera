@@ -35,4 +35,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)zombieTouched:(id)sender
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 5; i++)
+    {
+        [array addObject:[NSNumber numberWithInt:i]];
+    }
+    
+    [array release];
+
+    NSLog(@"Count: %i", [array count]); // ARGGH!!
+    
+    // Solutions:
+    // 1. Product > Scheme > Edit Scheme > Diagnostics > Enable Zombie Objects
+    // 2. Instruments
+}
+
 @end

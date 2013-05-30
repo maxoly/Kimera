@@ -57,4 +57,58 @@
     }
 }
 
+- (IBAction)loggingTouched:(id)sender
+{
+    NSInteger sum = 0;
+    NSArray *array = @[ @1, @2, @3, @4, @5 ];
+    
+    for (int i = 0; i < array.count; i++)
+    {
+        NSNumber *element = array[i];
+        sum += [element integerValue];
+    }
+    
+    NSLog(@"sum: %i", sum);
+    
+    CGFloat avg = sum / array.count;
+    
+    NSLog(@"avg: %f", avg);
+}
+
+- (IBAction)debuggerTouched:(id)sender
+{
+    NSInteger sum = 0;
+    NSArray *array = @[ @1, @2, @3, @4, @5 ];
+    
+    for (int i = 0; i < array.count; i++)
+    {
+        NSNumber *element = array[i];
+        sum += [element integerValue];
+    }
+    
+    NSLog(@"sum: %i", sum);
+}
+
+- (IBAction)soundTouched:(id)sender
+{
+    // ~/Library/Sounds
+    NSLog(@"just a sound");
+}
+
+- (IBAction)speakerTouched:(id)sender
+{
+    NSInteger sum = 0;
+    NSArray *array = @[ @1, @2, @3, @4, @5 ];
+    
+    for (int i = 0; i < array.count; i++)
+    {
+        NSNumber *element = array[i];
+        sum += [element integerValue];
+    }
+    
+    NSLog(@"sum: %i", sum);
+    
+    // little issue!
+}
+
 @end
