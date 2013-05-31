@@ -9,6 +9,7 @@
     <!-- ####################################### -->
     <!-- PROPERTIES Section -->
     <!-- ####################################### -->
+    <property environment="env"/>
     
     <!-- APP Specific properties -->
     <property name="app.name"               value="Kimera"/>
@@ -41,9 +42,10 @@
     
     <!-- Testflight properties -->
     <property name="testflight.list"        value="Kimera"/>
-    <property name="testflight.teamtoken"   value=""/>
-    <property name="testflight.apitoken"    value=""/>
+    <property name="testflight.teamtoken"   value="${env.TESTFLIGHT_TEAMTOKEN}"/>
+    <property name="testflight.apitoken"    value="${env.TESTFLIGHT_APITOKEN}"/>
     <property name="testflight.notes"       value=""/>
+    
     
     
     
@@ -78,6 +80,8 @@
     </target>
     
     <target name="deploy" description="deploy the app" depends="changelog">
+        <echo message="TestFlight, Team Token: ${testflight.teamtoken}" />
+        <echo message="TestFlight, Api Token: ${testflight.apitoken}" />
         <antcall target="plist"/>
         <antcall target="adhoc"/>
         <antcall target="ipa"/>
@@ -85,7 +89,6 @@
         <antcall target="testflight"/>
         <antcall target="tag"/>
         <antcall target="pushtag"/>
-        
     </target>
     
     
@@ -345,7 +348,7 @@
     
     
     <!-- ####################################### -->
-    <!-- Creazione documentazione con Appledoc   -->
+    <!-- Appledoc                                -->
     <!-- ####################################### -->
     <target name="doc" description="">
         <exec executable="/usr/libexec/PlistBuddy" outputproperty="CurrentVersion" errorproperty="PListError" failOnError="true">
