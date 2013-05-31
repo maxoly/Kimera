@@ -33,6 +33,14 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Tools</string>
+				<key>detail</key>
+				<string>...</string>
+				<key>viewController</key>
+				<string>KMRMToolsViewController</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>MRC Issues</string>
 				<key>detail</key>
 				<string>huhu</string>

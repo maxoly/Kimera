@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AFNetworking.h"
+
 @interface KMRMToolsViewController : UIViewController
+
+- (IBAction)appnetTouched:(id)sender;
+- (IBAction)ios6ApiTouched:(id)sender;
+- (IBAction)googleTouched:(id)sender;
 
 @end

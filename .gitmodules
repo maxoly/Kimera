@@ -10,3 +10,6 @@
 [submodule "KimeraMobile/KimeraMobile/Vendors/lldb_utilities"]
 	path = KimeraMobile/KimeraMobile/Vendors/lldb_utilities
 	url = git://github.com/liyanage/lldb_utilities.git
+[submodule "KimeraMobile/KimeraMobile/Vendors/AFNetworking"]
+	path = KimeraMobile/KimeraMobile/Vendors/AFNetworking
+	url = git://github.com/AFNetworking/AFNetworking.git
