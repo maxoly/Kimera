@@ -22,7 +22,6 @@
 		56162B8A1753FCD000C7705E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B871753FCD000C7705E /* Default-568h@2x.png */; };
 		56162B8B1753FCD000C7705E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B881753FCD000C7705E /* Default.png */; };
 		56162B8C1753FCD000C7705E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B891753FCD000C7705E /* Default@2x.png */; };
-		56239F191757E81800C3B4EE /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56239F181757E81800C3B4EE /* SparkInspector.framework */; };
 		562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
 		562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
 		562FE97317540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */; };
@@ -78,6 +77,7 @@
 		564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */; };
 		564FDE31175696A400B637BC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC44175696A200B637BC /* README.txt */; };
 		564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */; };
+		56E355EB175896980003272A /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E355EA175896980003272A /* SparkInspector.framework */; };
 		KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,7 +115,6 @@
 		56162B871753FCD000C7705E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		56162B881753FCD000C7705E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		56162B891753FCD000C7705E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		56239F181757E81800C3B4EE /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		562FE965175407AD004DC70D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		562FE968175407AD004DC70D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		562FE96E17540A37004DC70D /* KMRMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeViewController.h; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		564FDC44175696A200B637BC /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~iphone.xib"; sourceTree = "<group>"; };
+		56E355EA175896980003272A /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -187,7 +187,7 @@
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
-				56239F191757E81800C3B4EE /* SparkInspector.framework in Frameworks */,
+				56E355EB175896980003272A /* SparkInspector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,13 +226,13 @@
 		56162B2F1753F52A00C7705E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56E355EA175896980003272A /* SparkInspector.framework */,
 				564FDC1317568D2C00B637BC /* CFNetwork.framework */,
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
 				56162B321753F52A00C7705E /* Foundation.framework */,
 				562FE97A17540B43004DC70D /* libz.dylib */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
-				56239F181757E81800C3B4EE /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
 			);
@@ -851,6 +851,8 @@
 					"-ObjC",
 					"-framework",
 					SparkInspector,
+					"-framework",
+					SparkInspector,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -897,6 +899,8 @@
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
+					"-framework",
+					SparkInspector,
 					"-framework",
 					SparkInspector,
 				);
@@ -983,6 +987,8 @@
 					"-ObjC",
 					"-framework",
 					SparkInspector,
+					"-framework",
+					SparkInspector,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1006,6 +1012,8 @@
 				OTHER_LDFLAGS = (
 					"-lTestFlight",
 					"-ObjC",
+					"-framework",
+					SparkInspector,
 					"-framework",
 					SparkInspector,
 				);
@@ -1055,6 +1063,8 @@
 					"-ObjC",
 					"-framework",
 					SparkInspector,
+					"-framework",
+					SparkInspector,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1076,6 +1086,8 @@
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
+					"-framework",
+					SparkInspector,
 					"-framework",
 					SparkInspector,
 				);
