@@ -15,5 +15,7 @@
 - (IBAction)appnetTouched:(id)sender;
 - (IBAction)ios6ApiTouched:(id)sender;
 - (IBAction)googleTouched:(id)sender;
+- (IBAction)testflightTouched:(id)sender;
+
 
 @end

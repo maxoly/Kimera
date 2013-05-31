@@ -37,16 +37,27 @@
     {
         sum++;
     }
+    
+    // p sum
 }
 
 - (IBAction)poTouched:(id)sender
 {
     KMRMArgument *argument = [[KMRMArgument alloc] initWithName:@"Objective-C ARC" detail:@"Automatic Reference Counting"];
     argument.viewController = [KMRMLLDBViewController class];
+    
+    // po argument
+    // p argument
 }
 
 - (IBAction)exprTouched:(id)sender
 {
+    NSString *username = @"maxoly";
+    NSString *password = @"secret";
+    
+    // es. expr password = @"newpass"
+    // es. expression (view, printf)
+    NSLog(@"user: %@ as password: %@", username, password);
 }
 
 @end

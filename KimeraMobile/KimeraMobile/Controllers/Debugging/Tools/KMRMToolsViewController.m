@@ -62,10 +62,17 @@
     [operation start];
 }
 
+- (IBAction)testflightTouched:(id)sender
+{
+    NSArray *array = @[ @1, @2, @3 ];
+    NSNumber *element = [array objectAtIndex:4];
+    NSLog(@"element: %@", element);
+}
+
 - (IBAction)ios6ApiTouched:(id)sender
 {
     NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    NSLog(@"TidentifierForVender: %@", uuid);
+    NSLog(@"identifierForVendor: %@", uuid);
 }
 
 
