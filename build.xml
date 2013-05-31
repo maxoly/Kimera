@@ -46,6 +46,9 @@
     <property name="testflight.apitoken"    value="${env.TESTFLIGHT_APITOKEN}"/>
     <property name="testflight.notes"       value=""/>
     
+    <!-- Script properties -->
+    <property name="script.command.build"  value="xcodebuild"/> <!-- or  xctool.sh -->
+    
     
     
     
@@ -315,7 +318,7 @@
     </target>
     
     <target name="compile" description="">
-        <exec executable="xcodebuild" failOnError="true">
+        <exec executable="${script.command.build}" failOnError="true">
             <arg line="-verbose -workspace ${compile.workspace} -scheme ${compile.scheme} -configuration ${compile.configuration} -sdk ${compile.sdk}"/>
             <arg value="clean"/>
             <arg value="build"/>

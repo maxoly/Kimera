@@ -1,3 +1,9 @@
 language: objective-c
 
-script: xcodebuild -workspace Kimera.xcworkspace -scheme KimeraMobile -config Release -sdk iphonesimulator clean build
+script: 
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config Debug -sdk iphonesimulator clean build
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config Release -sdk iphonesimulator clean build
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config AdHoc -sdk iphonesimulator clean build
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config Debug -sdk iphoneos clean build
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config Release -sdk iphoneos clean build
+	- xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -config AdHoc -sdk iphoneos clean build
