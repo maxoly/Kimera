@@ -1,3 +1,3 @@
 language: objective-c
 
-script:  xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -configuration Release -sdk iphoneos clean build
+script:  xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -configuration Release -sdk iphonesimulator clean build
