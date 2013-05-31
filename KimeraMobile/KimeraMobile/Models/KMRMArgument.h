@@ -14,7 +14,7 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *detail;
 @property (nonatomic, assign) Class viewController;
-
+@property (nonatomic, copy, readonly) NSString *viewControllerString;
 
 // initializers
 - (instancetype)initWithName:(NSString *)name;

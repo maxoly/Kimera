@@ -32,4 +32,9 @@
     return self;
 }
 
+- (NSString *)viewControllerString
+{
+    return NSStringFromClass(self.viewController);
+}
+
 @end

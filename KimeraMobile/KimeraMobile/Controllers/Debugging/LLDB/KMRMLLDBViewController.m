@@ -14,31 +14,39 @@
 
 @implementation KMRMLLDBViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
+
+#pragma mark - View Lifecycle Methods
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+ 
+    self.title = NSLocalizedString(@"LLDB", nil);
 }
 
-- (void)didReceiveMemoryWarning
+
+
+#pragma mark - Action Methods
+
+- (IBAction)pTouched:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSInteger sum = 0;
+    
+    for (int i = 0; i < 5; i++)
+    {
+        sum++;
+    }
 }
 
-- (void)ios6apiTouched:(id)sender
+- (IBAction)poTouched:(id)sender
 {
-    NSString *uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    NSLog(@"New iOS 6 APi -  UIDevice:identifierForVendor - %@", uuid);
+    KMRMArgument *argument = [[KMRMArgument alloc] initWithName:@"Objective-C ARC" detail:@"Automatic Reference Counting"];
+    argument.viewController = [KMRMLLDBViewController class];
+}
+
+- (IBAction)exprTouched:(id)sender
+{
 }
 
 @end

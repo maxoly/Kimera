@@ -83,6 +83,12 @@
 		56DE03351758ADCC00358046 /* KMRMLLDBViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03311758ADCC00358046 /* KMRMLLDBViewController~iphone.xib */; };
 		56DE03371758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03361758ADEF00358046 /* KMRMLLDBViewController~ipad.xib */; };
 		56DE03381758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03361758ADEF00358046 /* KMRMLLDBViewController~ipad.xib */; };
+		56DE033D1758FE0900358046 /* KMRMToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE033B1758FE0900358046 /* KMRMToolsViewController.m */; };
+		56DE033E1758FE0900358046 /* KMRMToolsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE033B1758FE0900358046 /* KMRMToolsViewController.m */; };
+		56DE033F1758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */; };
+		56DE03401758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */; };
+		56DE03421758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */; };
+		56DE03431758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */; };
 		56E355EB175896980003272A /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E355EA175896980003272A /* SparkInspector.framework */; };
 		56E355F017589E500003272A /* lldb_utilities.py in Resources */ = {isa = PBXBuildFile; fileRef = 56E355ED17589E500003272A /* lldb_utilities.py */; };
 		56E355F117589E500003272A /* lldbinit in Resources */ = {isa = PBXBuildFile; fileRef = 56E355EE17589E500003272A /* lldbinit */; };
@@ -185,6 +191,10 @@
 		56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLLDBViewController.m; sourceTree = "<group>"; };
 		56DE03311758ADCC00358046 /* KMRMLLDBViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLLDBViewController~iphone.xib"; sourceTree = "<group>"; };
 		56DE03361758ADEF00358046 /* KMRMLLDBViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLLDBViewController~ipad.xib"; sourceTree = "<group>"; };
+		56DE033A1758FE0900358046 /* KMRMToolsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMToolsViewController.h; sourceTree = "<group>"; };
+		56DE033B1758FE0900358046 /* KMRMToolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMToolsViewController.m; sourceTree = "<group>"; };
+		56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMToolsViewController~iphone.xib"; sourceTree = "<group>"; };
+		56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMToolsViewController~ipad.xib"; sourceTree = "<group>"; };
 		56E355EA175896980003272A /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		56E355ED17589E500003272A /* lldb_utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lldb_utilities.py; sourceTree = "<group>"; };
 		56E355EE17589E500003272A /* lldbinit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lldbinit; sourceTree = "<group>"; };
@@ -304,11 +314,11 @@
 		56162B6E1753F70300C7705E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5635974A17588CE00009E155 /* Scripts */,
 				5648D5D417553C9500EE9C0E /* Data */,
 				56162B851753FC9100C7705E /* Images */,
-				56162B7A1753F8EF00C7705E /* Themes */,
 				56162B6F1753F71F00C7705E /* Localizations */,
+				5635974A17588CE00009E155 /* Scripts */,
+				56162B7A1753F8EF00C7705E /* Themes */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -400,6 +410,7 @@
 		56162B901753FD1900C7705E /* Debugging */ = {
 			isa = PBXGroup;
 			children = (
+				56DE03391758FDF300358046 /* Tools */,
 				56DE032E1758ADAB00358046 /* LLDB */,
 				5648D5E517554CBC00EE9C0E /* Logging */,
 				5648D5611754D80800EE9C0E /* Breakpoints */,
@@ -633,6 +644,17 @@
 			path = LLDB;
 			sourceTree = "<group>";
 		};
+		56DE03391758FDF300358046 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				56DE033A1758FE0900358046 /* KMRMToolsViewController.h */,
+				56DE033B1758FE0900358046 /* KMRMToolsViewController.m */,
+				56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */,
+				56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		56E355EC17589E500003272A /* lldb_utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,6 +764,8 @@
 				56EC3B9C1758A5BC00667F2D /* utils.py in Resources */,
 				56DE03341758ADCC00358046 /* KMRMLLDBViewController~iphone.xib in Resources */,
 				56DE03371758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */,
+				56DE033F1758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */,
+				56DE03421758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +786,8 @@
 				5648D5EF17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */,
 				56DE03351758ADCC00358046 /* KMRMLLDBViewController~iphone.xib in Resources */,
 				56DE03381758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */,
+				56DE03401758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */,
+				56DE03431758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +835,7 @@
 				564FDE2F175696A400B637BC /* ContextFilterLogFormatter.m in Sources */,
 				564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */,
 				56DE03321758ADCC00358046 /* KMRMLLDBViewController.m in Sources */,
+				56DE033D1758FE0900358046 /* KMRMToolsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +855,7 @@
 				5648D5E3175543C400EE9C0E /* KMRMBaseViewController.m in Sources */,
 				5648D5EA17554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
 				56DE03331758ADCC00358046 /* KMRMLLDBViewController.m in Sources */,
+				56DE033E1758FE0900358046 /* KMRMToolsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

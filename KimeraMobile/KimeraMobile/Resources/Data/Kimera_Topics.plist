@@ -17,6 +17,22 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>Breakpoints</string>
+				<key>detail</key>
+				<string>huhu</string>
+				<key>viewController</key>
+				<string>KMRMBreakpointsViewController</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>LLDB</string>
+				<key>detail</key>
+				<string>Dive into LLDB debugger</string>
+				<key>viewController</key>
+				<string>KMRMLLDBViewController</string>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>MRC Issues</string>
 				<key>detail</key>
 				<string>huhu</string>
@@ -30,14 +46,6 @@
 				<string>huhu</string>
 				<key>viewController</key>
 				<string>KMRMArcIssuesViewController</string>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>Breakpoints</string>
-				<key>detail</key>
-				<string>huhu</string>
-				<key>viewController</key>
-				<string>KMRMBreakpointsViewController</string>
 			</dict>
 		</array>
 	</dict>
