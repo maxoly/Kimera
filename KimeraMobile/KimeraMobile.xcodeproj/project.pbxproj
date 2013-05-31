@@ -1051,7 +1051,6 @@
 		56162B931753FDC300C7705E /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Massimo Oliviero (P8PTRS25UF)";
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
@@ -1069,7 +1068,6 @@
 					SparkInspector,
 				);
 				PRODUCT_NAME = Kimera;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "08A8F752-0C91-42DF-860C-52A655B348A5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = AdHoc;

@@ -41,8 +41,8 @@
     
     <!-- Testflight properties -->
     <property name="testflight.list"        value="Kimera"/>
-    <property name="testflight.teamtoken"   value="bef6deff66f9c96e2dd8ec50b81d7f05_MTA2NDg4MjAxMi0wNy0wMyAxMTowMzo0MC4yMzM0MTc"/>
-    <property name="testflight.apitoken"    value="95c4b0b13df6d5f8069a3687db7c84ec_MTA3MjYz"/>
+    <property name="testflight.teamtoken"   value=""/>
+    <property name="testflight.apitoken"    value=""/>
     <property name="testflight.notes"       value=""/>
     
     

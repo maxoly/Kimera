@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56162B2C1753F52A00C7705E"
-               BuildableName = "KimeraMobile.app"
+               BuildableName = "Kimera.app"
                BlueprintName = "KimeraMobile"
                ReferencedContainer = "container:KimeraMobile.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56162B2C1753F52A00C7705E"
-            BuildableName = "KimeraMobile.app"
+            BuildableName = "Kimera.app"
             BlueprintName = "KimeraMobile"
             ReferencedContainer = "container:KimeraMobile.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56162B2C1753F52A00C7705E"
-            BuildableName = "KimeraMobile.app"
+            BuildableName = "Kimera.app"
             BlueprintName = "KimeraMobile"
             ReferencedContainer = "container:KimeraMobile.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56162B2C1753F52A00C7705E"
-            BuildableName = "KimeraMobile.app"
+            BuildableName = "Kimera.app"
             BlueprintName = "KimeraMobile"
             ReferencedContainer = "container:KimeraMobile.xcodeproj">
          </BuildableReference>
