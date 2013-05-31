@@ -82,7 +82,7 @@
             <BreakpointActionProxy
                ActionType = "Xcode.BreakpointAction.Sound">
                <ActionContent
-                  soundName = "Vincent_Price_Thriller_Laugh_Jedi">
+                  soundName = "Homer - Craaaaaap">
                </ActionContent>
             </BreakpointActionProxy>
          </Actions>
