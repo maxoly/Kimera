@@ -903,8 +903,6 @@
 					"-ObjC",
 					"-framework",
 					SparkInspector,
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -927,6 +925,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
 					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1020,8 +1023,6 @@
 					"-ObjC",
 					"-framework",
 					SparkInspector,
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1094,8 +1095,6 @@
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-framework",
-					SparkInspector,
 					"-framework",
 					SparkInspector,
 				);
