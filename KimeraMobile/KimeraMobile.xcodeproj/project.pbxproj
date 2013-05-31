@@ -226,13 +226,13 @@
 		56162B2F1753F52A00C7705E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56E355EA175896980003272A /* SparkInspector.framework */,
 				564FDC1317568D2C00B637BC /* CFNetwork.framework */,
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
 				56162B321753F52A00C7705E /* Foundation.framework */,
 				562FE97A17540B43004DC70D /* libz.dylib */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
+				56E355EA175896980003272A /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
 			);
@@ -846,7 +846,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -888,16 +887,16 @@
 		56162B601753F52B00C7705E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -912,19 +911,16 @@
 		56162B611753F52B00C7705E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1006,17 +1002,17 @@
 		56162B931753FDC300C7705E /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-lTestFlight",
@@ -1082,16 +1078,16 @@
 		56162B961753FDCA00C7705E /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"/**";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"/**",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
