@@ -891,11 +891,13 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -918,11 +920,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1003,11 +1007,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lTestFlight",
@@ -1078,11 +1084,13 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
