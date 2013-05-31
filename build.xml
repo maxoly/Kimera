@@ -1,0 +1,478 @@
+<project name="The Dog Diary" default="debug" basedir=".">
+    
+    <description>
+        Massimo Oliviero - Kimera, an iOS sample application.
+    </description>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- PROPERTIES Section -->
+    <!-- ####################################### -->
+    
+    <!-- APP Specific properties -->
+    <property name="app.name"               value="Kimera"/>
+    <property name="app.workspace"          value="Kimera.xcworkspace"/>
+    <property name="app.scheme"             value="KimeraMobile"/>
+    <property name="app.scheme.tests"       value="KimeraMobileTests"/>
+    <property name="app.target"             value="KimeraMobile"/>
+    <property name="app.target.test"        value="KimeraMobileTests"/>
+    <property name="app.plist"              value="KimeraMobile/KimeraMobile/Application/KimeraMobile-Info.plist"/>
+    <property name="app.localization"       value="Localization"/>
+    <property name="app.company"            value="Massimo Oliviero"/>
+    <property name="app.company.domain"     value="net.massimooliviero"/>
+    
+    <!-- DIRECTORY, FILE and URL settings -->
+    <property name="app.dir.src"            value="KimeraMobile"/>
+    <property name="app.dir.scripts"        value="KimeraMobile.Build.Scripts"/>
+    <property name="app.dir.doc"            value="KimeraMobile.Build.Doc"/>
+    <property name="app.dir.analyze"        value="KimeraMobile.Build.Analyze"/>
+    <property name="app.dir.oclint"         value="KimeraMobile.Build.OCLint"/>
+    <property name="app.dir.coverage"       value="KimeraMobile.Build.TestCoverage"/>
+    <property name="app.dir.uatest"         value="KimeraMobile.Build.UATest"/>
+    <property name="app.file.oclint"        value="&quot;${basedir}/${app.dir.oclint}/test.html&quot;"/>
+    <property name="app.file.readme"        value="${basedir}/Readme.md"/>
+    <property name="app.repo.user"          value=""/>
+    <property name="app.repo.api"           value=""/>
+    
+    <!-- PROVISIONING settings -->
+    <property name="provisioning.name"      value="iPhone Distribution: Massimo Oliviero"/>
+    <property name="provisioning.file"      value="./${app.dir.scripts}/embedded.mobileprovision"/>
+    
+    <!-- Testflight properties -->
+    <property name="testflight.list"        value="Kimera"/>
+    <property name="testflight.teamtoken"   value="bef6deff66f9c96e2dd8ec50b81d7f05_MTA2NDg4MjAxMi0wNy0wMyAxMTowMzo0MC4yMzM0MTc"/>
+    <property name="testflight.apitoken"    value="95c4b0b13df6d5f8069a3687db7c84ec_MTA3MjYz"/>
+    <property name="testflight.notes"       value=""/>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- TOP TARGET                         -->
+    <!-- ####################################### -->
+    <target name="debug" description="compile the source">
+        <antcall target="compile">
+            <param name="compile.workspace" value="${app.workspace}"/>
+            <param name="compile.scheme" value="${app.scheme}"/>
+            <param name="compile.configuration" value="Debug"/>
+            <param name="compile.sdk" value="iphonesimulator"/>
+        </antcall>
+    </target>
+    
+    <target name="release" description="compile the source">
+        <antcall target="compile">
+            <param name="compile.workspace" value="${app.workspace}"/>
+            <param name="compile.scheme" value="${app.scheme}"/>
+            <param name="compile.configuration" value="Release"/>
+            <param name="compile.sdk" value="iphoneos"/>
+        </antcall>
+    </target>
+    
+    <target name="adhoc" description="compile the source">
+        <antcall target="compile">
+            <param name="compile.workspace" value="${app.workspace}"/>
+            <param name="compile.scheme" value="${app.scheme}"/>
+            <param name="compile.configuration" value="AdHoc"/>
+            <param name="compile.sdk" value="iphoneos"/>
+        </antcall>
+    </target>
+    
+    <target name="deploy" description="deploy the app" depends="changelog">
+        <antcall target="plist"/>
+        <antcall target="adhoc"/>
+        <antcall target="ipa"/>
+        <antcall target="zip"/>
+        <antcall target="testflight"/>
+        <antcall target="tag"/>
+        <antcall target="pushtag"/>
+        
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- SCRIPT Section                          -->
+    <!-- ####################################### -->
+    <scriptdef name="increase.number" language="javascript">
+        <attribute name="value" />
+        <attribute name="property"/>
+        <![CDATA[
+            var initVal = attributes.get("value");
+            var finalVal = parseInt(initVal) + 1;
+            project.setProperty(attributes.get("property"), finalVal);
+        ]]>
+    </scriptdef>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- HELP                                    -->
+    <!-- ####################################### -->
+    <target name="help">
+        <echo message="This buildfile shows how to get help."/>
+        <echo>Target:</echo>
+        <echo>
+            [debug]     = to compile project with 'Debug' configuration on iPhoneSimulator SDK
+            [release]   = to compile project with 'Release' configuration on iPhoneOS SDK
+            [adhoc]     = to compile project with 'AdHoc' configuration on iPhoneOS SDK
+        </echo>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- ZIP dSYM                                -->
+    <!-- ####################################### -->
+    <target name="zip" description="">
+        <exec executable="zip" failOnError="true">
+            <arg line="-r build/${app.name}.app.dSYM.zip build/${app.name}.app.dSYM"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- GENSTRING - Localizations               -->
+    <!-- ####################################### -->
+    <target name="genstring" description="generate string table from source code for localization">
+        <mkdir dir="${app.localization}"/>
+        <exec executable="bash" failOnError="true">
+            <arg value="-c"/>
+            <arg value="find ./ -name *.m -print0 | xargs -0 genstrings -o ${app.localization}"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- GIT TAG                                 -->
+    <!-- ####################################### -->
+    <target name="tag" description="">
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="TagAppVersion" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Print :CFBundleShortVersionString"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="TagAppBuild" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Print :CFBundleVersion"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        <property name="TagVersion" value="v${TagAppVersion}(${TagAppBuild})"/>
+        
+        <exec executable="git" failOnError="true">
+            <arg line="commit"/>
+            <arg line="-a"/>
+            <arg line="-m 'version ${TagVersion}'"/>
+        </exec>
+        
+        <exec executable="git" failOnError="true">
+            <arg line="tag"/>
+            <arg line="-a '${TagVersion}'"/>
+            <arg line="-m 'tagging version ${TagVersion}'"/>
+        </exec>
+        
+        <exec executable="git" failOnError="true">
+            <arg line="push"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- GIT PUSH TAG                            -->
+    <!-- ####################################### -->
+    <target name="pushtag">
+        <exec executable="git" failOnError="true">
+            <arg line="push"/>
+            <arg line="origin --tags"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- CREATE CHANGELOG FROM GIT COMMENTS      -->
+    <!-- ####################################### -->
+    <target name="changelog" description="">
+        
+        <!-- Recupera il nome dell'ultimo tag -->
+        <exec executable="git" outputproperty="git.last.tag" failOnError="no">
+            <arg value="describe"/>
+            <arg line="--abbrev=0"/>
+            <arg line="--tags"/>
+        </exec>
+        
+        <condition property="git.from.to"   value="${git.last.tag}..HEAD" else=" ">
+            <and>
+                <isset property="git.last.tag"/>
+                <not><equals arg1="${git.last.tag}" arg2="fatal: No names found, cannot describe anything."/></not>
+            </and>
+        </condition>
+        
+        <condition property="git.last.tag.name" value="${git.last.tag}" else="1.0.0">
+            <and>
+                <isset property="git.last.tag"/>
+                <not><equals arg1="${git.last.tag}" arg2="fatal: No names found, cannot describe anything."/></not>
+            </and>
+        </condition>
+        
+        <!-- Recupera dal plist del progetto l'ultima versione -->
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="CFAppVersion" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Print :CFBundleShortVersionString"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="CFAppBuild" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Print :CFBundleVersion"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        
+        <!-- Incrementa la versione di uno -->
+        <increase.number value="${CFAppBuild}" property="CFAppBuildPlus"/>
+        
+        <!-- Definisce il nuovo tag -->
+        <property name="NewTagName" value="v${CFAppVersion}(${CFAppBuildPlus})"/>
+        
+        <exec executable="git" outputproperty="git.changelog" failOnError="true">
+            <arg value="log"/>
+            <arg line="${git.from.to}"/>
+            <arg line="--grep='^\[add\]' --grep='^\[chg\]' --grep='^\[fix\]'"/>
+            <arg line="--pretty=format:'%s (%an/%h)'"/>
+            <!-- <arg line="-ancestry-path 270ba53..c216c42"/> -->
+        </exec>
+        
+        <!-- Definisce il changelog -->
+        <property name="app.changelog" value="&#xa;&#xa;Changelog da ${git.last.tag.name} a ${NewTagName}:&#xa;${git.changelog}"/>
+        
+        <!-- Stampa il changelog -->
+        <echo message="${app.changelog}" />
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- BITBUCKET ADD VERSION                   -->
+    <!-- ####################################### -->
+    <target name="repo-add-version" description="">
+        <exec executable="curl" failOnError="true">
+            <arg line="-u {app.repo.user}"/>
+            <arg line="${app.repo.api}/issues/versions/"/>
+            <arg line="-F name='${NewTagName}'"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- TESTFLIGHT UPLOAD                       -->
+    <!-- ####################################### -->
+    <target name="testflight" description="">
+        <exec executable="curl" failOnError="true">
+            <arg line="https://testflightapp.com/api/builds.json"/>
+            <arg line="--verbose --progress-bar"/>
+            <arg line="--fail"/> <!-- in questo modo se non http 200 ritorna un exit code diverso da 0 e fallisce il target -->
+            <arg line="-F file=@&quot;${basedir}/build/${app.name}.ipa&quot;"/>
+            <arg line="-F dsym=@&quot;${basedir}/build/${app.name}.app.dSYM.zip&quot;"/>
+            <arg line="-F api_token='${testflight.apitoken}'"/>
+            <arg line="-F team_token='${testflight.teamtoken}'"/>
+            <arg line="-F notes='${testflight.notes}${app.changelog}'"/>
+            <arg line="-F notify=True"/>
+            <arg line="-F distribution_lists='${testflight.list}'"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- CUCUMBER TESTS                          -->
+    <!-- ####################################### -->
+    <target name="cucumber">
+        <exec executable="cucumber" failOnError="true">
+            <arg line="-f junit --out build-cucumber"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- UIAutomation TEST                       -->
+    <!-- ####################################### -->
+    <target name="uitest" description="">
+        <delete dir="${basedir}/${app.dir.uatest}"/>
+        <mkdir dir="${basedir}/${app.dir.uatest}"/>
+        <antcall target="debug"/>
+        <exec executable="instruments" failOnError="true">
+            <arg line="-t /Applications/Xcode.app/Contents/Applications/Instruments.app/Contents/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate"/>
+            <arg line="&quot;${basedir}/build/Debug-iphonesimulator/${app.name}.app&quot;"/>
+            <arg line="-e UIASCRIPT &quot;${basedir}/${app.dir.scripts}/build_uitest.js&quot;"/>
+            <arg line="-e UIARESULTSPATH &quot;${basedir}/${app.dir.uatest}&quot;"/>
+        </exec>
+    </target>
+    
+    <target name="compile" description="">
+        <exec executable="xcodebuild" failOnError="true">
+            <arg line="-verbose -workspace ${compile.workspace} -scheme ${compile.scheme} -configuration ${compile.configuration} -sdk ${compile.sdk}"/>
+            <arg value="clean"/>
+            <arg value="build"/>
+            <arg value="CONFIGURATION_BUILD_DIR=${basedir}/build"/>
+        </exec>
+    </target>
+    
+    <target name="analyze" description="">
+        <exec executable="scan-build" failOnError="true">
+            <arg line="-v -o ${app.dir.analyze}"/>
+            <arg line="xcodebuild -verbose -workspace ${app.workspace} -scheme ${app.scheme} -configuration Release -sdk iphonesimulator"/>
+        </exec>
+    </target>
+    
+    <target name="oclint" description="">
+        <mkdir dir="${app.dir.oclint}"/>
+        <delete file="xcodebuild.log"/>
+        <delete file="compile_commands.json"/>
+        <exec executable="bash" failOnError="true">
+            <arg value="-c"/>
+            <arg value="xcodebuild -verbose -workspace ${app.workspace} -scheme ${app.scheme} -configuration Debug -sdk iphonesimulator | tee xcodebuild.log"/>
+        </exec>
+        <exec executable="oclint-xcodebuild" failOnError="true"/>
+        <exec executable="oclint-json-compilation-database" failOnError="true">
+            <arg line="-v"/>
+            <arg line="-- -html -stats -o=${app.file.oclint}"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- Creazione documentazione con Appledoc   -->
+    <!-- ####################################### -->
+    <target name="doc" description="">
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="CurrentVersion" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value ="Print :CFBundleShortVersionString"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        
+        <echo message="Fetched the last version in the plist: ${CurrentVersion}" />
+        
+        <exec executable="appledoc" failOnError="true">
+            <arg line="--print-settings"/>
+            <arg line="--project-name ${app.name}"/>
+            <arg line="--project-version ${CurrentVersion}"/>
+            <arg line="--project-company &quot;${app.company}&quot;"/>
+            <arg line="--company-id ${app.company.domain}"/>
+            <arg line="--docset-desc vediamo"/>
+            <arg line="--create-html"/>                     <!-- genera anche html -->
+            <arg line="--logformat xcode"/>                 <!-- output in formato compatibile con xcode -->
+            <arg line="--no-install-docset"/>               <!-- non installa il docset anche se generato  -->
+            <arg line="--no-create-docset"/>                <!-- non crea il docset -->
+            <arg line="--no-repeat-first-par"/>
+            <arg line="--keep-undocumented-objects"/>       <!-- include nella documentazione anche le classi senza doc specifica -->
+            <arg line="--keep-undocumented-members"/>       <!-- include nella documentazione anche i memebri senza doc specifica -->
+            <arg line="--keep-merged-sections"/>
+            <arg line="--keep-intermediate-files"/>         <!-- mantiene i file html nella root -->
+            <arg line="--index-desc &quot;${app.file.readme}&quot;"/>  <!-- include in file readme (markdown) nell index della doc -->
+            <arg line="--output ${app.dir.doc}"/>
+            <arg line="`find ${app.dir.src} -name 'QST*.h'`"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- #######################################  -->
+    <!--
+     Per eseguire i test a linea di comando è necessario:
+     1. Creare un nuovo target "Cocoa Touch Unit Testing Bundle" con nome $AppTests
+     2. Creare (se non esiste) uno schema $AppTests
+     3. Build Phases, aggiunre il progetto normale come dipendenza nel tab "Target Dependencies"
+     3. Edit Schema tab "Build" spuntare il flag "Run"
+     4. Build settings, impostare il flag "Test After Build" a YES (TEST_AFTER_BUILD)
+     5. Build settings, impostare il flag "Build Active Architeture Only" a NO (ONLY_ACTIVE_ARCH), anche su tutti i progetti dipendenti
+     6. Build settings, se c'è rimuovere il valore nel parametro "Test Host"
+     -->
+    <!-- #######################################  -->
+    <target name="test" description="test the source">
+        <antcall target="compile">
+            <param name="compile.workspace" value="${app.workspace}"/>
+            <param name="compile.scheme" value="${app.scheme.tests}"/>
+            <param name="compile.configuration" value="Debug"/>
+            <param name="compile.sdk" value="iphonesimulator"/>
+        </antcall>
+    </target>
+    
+    
+    
+    <!-- #######################################  -->
+    <!--
+     Esegue i test ed esporta il risultato in formato JUnit compatibile
+     NOTE: la cartella di esportazione è definita del file ocunit2junit.rb
+     -->
+    <!-- #######################################  -->
+    <target name="testreport" description="test the source">
+        <exec executable="bash" failOnError="true">
+            <arg value="-c"/>
+            <arg value="xcodebuild -workspace ${app.workspace} -scheme ${app.scheme.tests} -configuration Debug -sdk iphonesimulator clean build | ${basedir}/${app.dir.scripts}/ocunit2junit.rb"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- #######################################  -->
+    <!--
+     Per attivare il coverage dei test è necessario:
+     1. Sul target di test, impostare YES il flag "Generate Test Coverage File" (GCC_GENERATE_TEST_COVERAGE_FILES)
+     2. Sul target di test, impostare YES il flag "Instrument Program Flow" (GCC_INSTRUMENT_PROGRAM_FLOW_ARCS)
+     -->
+    <!-- #######################################  -->
+    <target name="testcoverage">
+        <delete dir="${basedir}/${app.dir.coverage}"/>
+        <antcall target="test"/>
+        <exec executable="osascript" failOnError="true">
+            <arg value="./${app.dir.scripts}/CodeCoverage.scpt"/>
+            
+            <!-- non usare &quot per i percorsi altrimenti non funzica -->
+            <arg value="${basedir}/build/${app.target}.build/Debug-iphonesimulator/${app.target.test}.build/Objects-normal/i386"/>
+            <arg value="${basedir}/${app.dir.coverage}"/>
+        </exec>
+    </target>
+    
+    
+    
+    <target name="ipa" description="">
+        <exec executable="xcrun" failOnError="true">
+            <arg line="-sdk iphoneos PackageApplication"/>
+            <arg line="-v &quot;${basedir}/build/${app.name}.app&quot;"/>
+            <arg line="-o &quot;${basedir}/build/${app.name}.ipa&quot;"/>
+            <arg line="--embed ${provisioning.file}"/>
+        </exec>
+    </target>
+    
+    
+    
+    <!-- ####################################### -->
+    <!-- PLIST Version - Modifica il plist del progetto
+     incrementando CFBundleVersion di uno  -->
+    <!-- ####################################### -->
+    <target name="plist" description="">
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="CurrentVersion" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Print :CFBundleVersion"/>
+            <arg value="${app.plist}"/>
+        </exec>
+        
+        <echo message="Fetched the last version in the plist: ${CurrentVersion}" />
+        <increase.number value="${CurrentVersion}" property="result"/>
+        
+        <exec executable="/usr/libexec/PlistBuddy" outputproperty="PListOutput" errorproperty="PListError" failOnError="true">
+            <arg value="-c"/>
+            <arg value="Set :CFBundleVersion ${result}" />
+            <arg value="${app.plist}"/>
+        </exec>
+        
+        <echo message="Output: ${PListOutput}"/>
+        <echo message="Errors: ${PListError}"/>
+        <echo message="Old version number: ${CurrentVersion} New Version Number: ${result}" />
+    </target>
+    
+</project>

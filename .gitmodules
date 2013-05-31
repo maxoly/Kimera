@@ -7,3 +7,6 @@
 [submodule "KimeraMobile/KimeraMobile/Vendors/DMLogger"]
 	path = KimeraMobile/KimeraMobile/Vendors/DMLogger
 	url = git://github.com/malcommac/DMLogger.git
+[submodule "KimeraMobile/KimeraMobile/Vendors/lldb_utilities"]
+	path = KimeraMobile/KimeraMobile/Vendors/lldb_utilities
+	url = git://github.com/liyanage/lldb_utilities.git

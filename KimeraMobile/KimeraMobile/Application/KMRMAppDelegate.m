@@ -31,7 +31,6 @@
 #ifdef TESTFLIGHT
     KMRLog(@"testflight...starting");   
     [TestFlight takeOff:@"82d8b72c-8e1b-4578-b421-fc780a21ff1e"];
-    
 #endif
     
 
