@@ -22,6 +22,7 @@
 		56162B8A1753FCD000C7705E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B871753FCD000C7705E /* Default-568h@2x.png */; };
 		56162B8B1753FCD000C7705E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B881753FCD000C7705E /* Default.png */; };
 		56162B8C1753FCD000C7705E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B891753FCD000C7705E /* Default@2x.png */; };
+		56239F191757E81800C3B4EE /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56239F181757E81800C3B4EE /* SparkInspector.framework */; };
 		562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
 		562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
 		562FE97317540A37004DC70D /* KMRMHomeViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */; };
@@ -35,6 +36,7 @@
 		562FE98517540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */; };
 		562FE98717540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */; };
 		562FE98817540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */; };
+		5635974C17588D0F0009E155 /* KMRMArgument_summary.py in Resources */ = {isa = PBXBuildFile; fileRef = 5635974B17588D0F0009E155 /* KMRMArgument_summary.py */; };
 		5648D5651754D83A00EE9C0E /* KMRMBreakpointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5631754D83A00EE9C0E /* KMRMBreakpointsViewController.m */; };
 		5648D5661754D83A00EE9C0E /* KMRMBreakpointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5648D5631754D83A00EE9C0E /* KMRMBreakpointsViewController.m */; };
 		5648D56A1754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5691754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib */; };
@@ -76,6 +78,7 @@
 		564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */; };
 		564FDE31175696A400B637BC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC44175696A200B637BC /* README.txt */; };
 		564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */; };
+		KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,7 @@
 		56162B871753FCD000C7705E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		56162B881753FCD000C7705E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		56162B891753FCD000C7705E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		56239F181757E81800C3B4EE /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		562FE965175407AD004DC70D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		562FE968175407AD004DC70D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		562FE96E17540A37004DC70D /* KMRMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeViewController.h; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		562FE98017540D8A004DC70D /* KMRMMrcIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMMrcIssueViewController.m; sourceTree = "<group>"; };
 		562FE98117540D8A004DC70D /* KMRMMrcIssueViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMMrcIssueViewController~iphone.xib"; sourceTree = "<group>"; };
 		562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMMrcIssueViewController~ipad.xib"; sourceTree = "<group>"; };
+		5635974B17588D0F0009E155 /* KMRMArgument_summary.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KMRMArgument_summary.py; sourceTree = "<group>"; };
 		5648D5621754D83A00EE9C0E /* KMRMBreakpointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMBreakpointsViewController.h; sourceTree = "<group>"; };
 		5648D5631754D83A00EE9C0E /* KMRMBreakpointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMBreakpointsViewController.m; sourceTree = "<group>"; };
 		5648D5691754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~ipad.xib"; sourceTree = "<group>"; };
@@ -167,6 +172,7 @@
 		564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		564FDC44175696A200B637BC /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~iphone.xib"; sourceTree = "<group>"; };
+		HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,8 @@
 				56162B311753F52A00C7705E /* UIKit.framework in Frameworks */,
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
+				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
+				56239F191757E81800C3B4EE /* SparkInspector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +230,9 @@
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
 				56162B321753F52A00C7705E /* Foundation.framework */,
 				562FE97A17540B43004DC70D /* libz.dylib */,
+				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
+				56239F181757E81800C3B4EE /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
 			);
@@ -276,6 +286,7 @@
 		56162B6E1753F70300C7705E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5635974A17588CE00009E155 /* Scripts */,
 				5648D5D417553C9500EE9C0E /* Data */,
 				56162B851753FC9100C7705E /* Images */,
 				56162B7A1753F8EF00C7705E /* Themes */,
@@ -438,6 +449,14 @@
 				562FE98617540DD7004DC70D /* KMRMMrcIssueViewController~ipad.xib */,
 			);
 			path = MrcIssues;
+			sourceTree = "<group>";
+		};
+		5635974A17588CE00009E155 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5635974B17588D0F0009E155 /* KMRMArgument_summary.py */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 		5648D5611754D80800EE9C0E /* Breakpoints */ = {
@@ -674,6 +693,7 @@
 				564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */,
 				564FDE31175696A400B637BC /* README.txt in Resources */,
 				564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */,
+				5635974C17588D0F0009E155 /* KMRMArgument_summary.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +847,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -861,6 +886,7 @@
 		56162B601753F52B00C7705E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
@@ -868,6 +894,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -877,6 +908,10 @@
 		56162B611753F52B00C7705E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
@@ -944,6 +979,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -953,6 +993,7 @@
 		56162B931753FDC300C7705E /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
@@ -962,7 +1003,12 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
 				);
-				OTHER_LDFLAGS = "-lTestFlight";
+				OTHER_LDFLAGS = (
+					"-lTestFlight",
+					"-ObjC",
+					"-framework",
+					SparkInspector,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1005,6 +1051,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1014,6 +1065,7 @@
 		56162B961753FDCA00C7705E /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
@@ -1021,6 +1073,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					SparkInspector,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

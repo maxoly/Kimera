@@ -28,9 +28,9 @@
             for (NSDictionary *argsDic in [topicsDic objectForKey:@"arguments"])
             {
                 NSString *name = [argsDic objectForKey:@"name"];
-                NSString *description = [argsDic objectForKey:@"description"];
+                NSString *detail = [argsDic objectForKey:@"detail"];
                 NSString *viewController = [argsDic objectForKey:@"viewController"];
-                KMRMArgument *argument = [[KMRMArgument alloc] initWithName:name description:description];
+                KMRMArgument *argument = [[KMRMArgument alloc] initWithName:name detail:detail];
                 argument.viewController = NSClassFromString(viewController);
                 [topic addArgument:argument];
             }

@@ -53,7 +53,7 @@
     KMRMArgument *argument = [topic.arguments objectAtIndex:indexPath.row];
     
     cell.textLabel.text = argument.name;
-    cell.detailTextLabel.text = argument.description;
+    cell.detailTextLabel.text = argument.detail;
     
     return cell;
 }

@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Massimo Oliviero. All rights reserved.
 //
 
+#if DEBUG
+#import <SparkInspector/SparkInspector.h>
+#endif
 #import "KMRMAppDelegate.h"
 
 #import "KMRMHomeViewController.h"
@@ -18,6 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Enable the Spark Inspector
+    #if DEBUG
+    [SparkInspector enableObservation];
+    #endif
+
     KMRLog(@"...starting");
     
 #ifdef TESTFLIGHT

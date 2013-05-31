@@ -12,12 +12,12 @@
 
 // properties
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *detail;
 @property (nonatomic, assign) Class viewController;
 
 
 // initializers
 - (instancetype)initWithName:(NSString *)name;
-- (instancetype)initWithName:(NSString *)name description:(NSString *)description;
+- (instancetype)initWithName:(NSString *)name detail:(NSString *)detail;
 
 @end

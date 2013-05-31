@@ -16,17 +16,17 @@
 
 - (instancetype)initWithName:(NSString *)name
 {
-    return [self initWithName:name description:nil];
+    return [self initWithName:name detail:nil];
 }
 
-- (instancetype)initWithName:(NSString *)name description:(NSString *)description
+- (instancetype)initWithName:(NSString *)name detail:(NSString *)detail
 {
     self = [super init];
     
     if (self)
     {
         self.name = name;
-        self.description = description;
+        self.detail = detail;
     }
     
     return self;
