@@ -79,6 +79,9 @@
 
 - (IBAction)dmloggerTouched:(id)sender
 {
+//    DMLogInfo(@"DMLogger test");
+//    DMLogError(@"Help!!");
+//    DMLogWarning(@"OMG!!");
 }
 
 @end
