@@ -12,6 +12,8 @@
 @class ExplorerNotificationState;
 @class ExplorerViewState;
 
+
+
 @interface SparkInspector : NSObject
 {
     SparkServer                 * _server;
