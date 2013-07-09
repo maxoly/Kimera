@@ -1,10 +1,7 @@
 #include "Pods-AFNetworking.xcconfig"
 #include "Pods-CocoaLumberjack.xcconfig"
-#include "Pods-MBProgressHUD.xcconfig"
 #include "Pods-NSLogger.xcconfig"
-#include "Pods-SparkInspector.xcconfig"
-FRAMEWORK_SEARCH_PATHS =  ${PODS_SPARKINSPECTOR_FRAMEWORK_SEARCH_PATHS}
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/SparkInspector"
-OTHER_LDFLAGS = -ObjC ${PODS_AFNETWORKING_OTHER_LDFLAGS} ${PODS_MBPROGRESSHUD_OTHER_LDFLAGS} ${PODS_NSLOGGER_OTHER_LDFLAGS} ${PODS_SPARKINSPECTOR_OTHER_LDFLAGS}
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/NSLogger"
+OTHER_LDFLAGS = -ObjC ${PODS_AFNETWORKING_OTHER_LDFLAGS} ${PODS_NSLOGGER_OTHER_LDFLAGS}
 PODS_ROOT = ${SRCROOT}/../Pods

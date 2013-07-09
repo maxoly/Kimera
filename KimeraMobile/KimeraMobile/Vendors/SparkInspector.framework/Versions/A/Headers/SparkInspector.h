@@ -16,12 +16,10 @@
 {
     SparkServer                 * _server;
     NSMutableArray              * _connections;
-    NSDictionary                * _preferences;
     
     BOOL                          _classesSwizzled;
     NSMutableDictionary         * _classAttributes;
     NSMutableDictionary         * _classDirtyMethods;
-    NSMutableDictionary         * _shorthands;
     
     ExplorerNotificationState   * _notificationState;
     ExplorerViewState           * _viewState;

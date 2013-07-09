@@ -89,6 +89,7 @@
 		564FDC1617568D4600B637BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1517568D4600B637BC /* SystemConfiguration.framework */; };
 		564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */; };
 		564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */; };
+		566E60C3178C928D002A5753 /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E60C2178C928D002A5753 /* SparkInspector.framework */; };
 		56DE03321758ADCC00358046 /* KMRMLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */; };
 		56DE03331758ADCC00358046 /* KMRMLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */; };
 		56DE03341758ADCC00358046 /* KMRMLLDBViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03311758ADCC00358046 /* KMRMLLDBViewController~iphone.xib */; };
@@ -202,6 +203,7 @@
 		564FDC1517568D4600B637BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme_jackie_chan.jpg; sourceTree = "<group>"; };
 		564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~iphone.xib"; sourceTree = "<group>"; };
+		566E60C2178C928D002A5753 /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		56DE032F1758ADCC00358046 /* KMRMLLDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMLLDBViewController.h; sourceTree = "<group>"; };
 		56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLLDBViewController.m; sourceTree = "<group>"; };
 		56DE03311758ADCC00358046 /* KMRMLLDBViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLLDBViewController~iphone.xib"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
 				DF24EC1C45354513A1AB8002 /* libPods.a in Frameworks */,
 				5611F6A3178C30A600A631A4 /* libTestFlight.a in Frameworks */,
+				566E60C3178C928D002A5753 /* SparkInspector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +368,14 @@
 				564FDC1317568D2C00B637BC /* CFNetwork.framework */,
 				56162B341753F52A00C7705E /* CoreGraphics.framework */,
 				56162B321753F52A00C7705E /* Foundation.framework */,
+				BAD933AEEAFB492CAD1BCDE4 /* libPods.a */,
 				562FE97A17540B43004DC70D /* libz.dylib */,
 				5619F183175934950072C7AB /* MobileCoreServices.framework */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
+				566E60C2178C928D002A5753 /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
-				BAD933AEEAFB492CAD1BCDE4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

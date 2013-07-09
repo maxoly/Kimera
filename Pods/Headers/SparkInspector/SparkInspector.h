@@ -1,1 +1,0 @@
-../../SparkInspector/SparkInspector.framework/Versions/A/Headers/SparkInspector.h
