@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          condition = "(BOOL)[(NSNumber *)element integerValue] == 3"
          continueAfterRunningActions = "No"
@@ -82,7 +82,7 @@
             <BreakpointActionProxy
                ActionType = "Xcode.BreakpointAction.Sound">
                <ActionContent
-                  soundName = "Homer - Craaaaaap">
+                  soundName = "Submarine">
                </ActionContent>
             </BreakpointActionProxy>
          </Actions>
@@ -173,7 +173,7 @@
    </SymbolicBreakpoints>
    <ExceptionBreakpoints>
       <ExceptionBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          scope = "0"

@@ -1,0 +1,2 @@
+PODS_SPARKINSPECTOR_FRAMEWORK_SEARCH_PATHS = "${PODS_ROOT}/SparkInspector"
+PODS_SPARKINSPECTOR_OTHER_LDFLAGS = -ObjC -lz -framework QuartzCore -framework SparkInspector
