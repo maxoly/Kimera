@@ -25,6 +25,7 @@
 		5611F69C178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */; };
 		5611F6A0178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
 		5611F6A1178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
+		5611F6A3178C30A600A631A4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 562FE965175407AD004DC70D /* libTestFlight.a */; };
 		56162B311753F52A00C7705E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B301753F52A00C7705E /* UIKit.framework */; };
 		56162B331753F52A00C7705E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B321753F52A00C7705E /* Foundation.framework */; };
 		56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B341753F52A00C7705E /* CoreGraphics.framework */; };
@@ -231,6 +232,7 @@
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
 				DF24EC1C45354513A1AB8002 /* libPods.a in Frameworks */,
+				5611F6A3178C30A600A631A4 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
