@@ -30,7 +30,6 @@
                      kLoggerOption_BufferLogsUntilConnection |
                      kLoggerOption_LogToConsole |
                      kLoggerOption_UseSSL |
-                     kLoggerOption_CaptureSystemConsole	|
                      kLoggerOption_BrowseBonjour |
                      kLoggerOption_BrowseOnlyLocalDomain);
     

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "LoggerClient.h"
+#import <NSLogger/LoggerClient.h>
+
 //#import "DMLogger.h"
 
 #ifdef DEBUG

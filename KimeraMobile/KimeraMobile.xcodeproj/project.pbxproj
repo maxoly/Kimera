@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5611F673178C17AF00A631A4 /* KMRMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F672178C17AF00A631A4 /* KMRMHomeCell.m */; };
+		5611F674178C17AF00A631A4 /* KMRMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F672178C17AF00A631A4 /* KMRMHomeCell.m */; };
+		5611F679178C17F300A631A4 /* KMRMInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F678178C17F300A631A4 /* KMRMInterface.m */; };
+		5611F67A178C17F300A631A4 /* KMRMInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F678178C17F300A631A4 /* KMRMInterface.m */; };
+		5611F687178C187200A631A4 /* KMRMDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F684178C187200A631A4 /* KMRMDefaultTheme.m */; };
+		5611F688178C187200A631A4 /* KMRMDefaultTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F684178C187200A631A4 /* KMRMDefaultTheme.m */; };
+		5611F68B178C188000A631A4 /* KMRMGreenTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F68A178C188000A631A4 /* KMRMGreenTheme.m */; };
+		5611F68C178C188000A631A4 /* KMRMGreenTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F68A178C188000A631A4 /* KMRMGreenTheme.m */; };
+		5611F68E178C18A300A631A4 /* KMRMHomeCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5611F68D178C18A300A631A4 /* KMRMHomeCell~ipad.xib */; };
+		5611F68F178C18A300A631A4 /* KMRMHomeCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5611F68D178C18A300A631A4 /* KMRMHomeCell~ipad.xib */; };
+		5611F691178C18B200A631A4 /* KMRMHomeCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5611F690178C18B200A631A4 /* KMRMHomeCell~iphone.xib */; };
+		5611F692178C18B200A631A4 /* KMRMHomeCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5611F690178C18B200A631A4 /* KMRMHomeCell~iphone.xib */; };
+		5611F696178C1A6B00A631A4 /* KMRMBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F695178C1A6B00A631A4 /* KMRMBaseCell.m */; };
+		5611F697178C1A6B00A631A4 /* KMRMBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F695178C1A6B00A631A4 /* KMRMBaseCell.m */; };
+		5611F69B178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */; };
+		5611F69C178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */; };
+		5611F6A0178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
+		5611F6A1178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
 		56162B311753F52A00C7705E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B301753F52A00C7705E /* UIKit.framework */; };
 		56162B331753F52A00C7705E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B321753F52A00C7705E /* Foundation.framework */; };
 		56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B341753F52A00C7705E /* CoreGraphics.framework */; };
@@ -22,15 +40,6 @@
 		56162B8A1753FCD000C7705E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B871753FCD000C7705E /* Default-568h@2x.png */; };
 		56162B8B1753FCD000C7705E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B881753FCD000C7705E /* Default.png */; };
 		56162B8C1753FCD000C7705E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 56162B891753FCD000C7705E /* Default@2x.png */; };
-		5619F14B175934720072C7AB /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F0F9175934710072C7AB /* AFHTTPClient.m */; };
-		5619F14C175934720072C7AB /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F0FB175934710072C7AB /* AFHTTPRequestOperation.m */; };
-		5619F14D175934720072C7AB /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F0FD175934710072C7AB /* AFImageRequestOperation.m */; };
-		5619F14E175934720072C7AB /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F0FF175934710072C7AB /* AFJSONRequestOperation.m */; };
-		5619F14F175934720072C7AB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F101175934710072C7AB /* AFNetworkActivityIndicatorManager.m */; };
-		5619F150175934720072C7AB /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F104175934710072C7AB /* AFPropertyListRequestOperation.m */; };
-		5619F151175934720072C7AB /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F106175934710072C7AB /* AFURLConnectionOperation.m */; };
-		5619F152175934720072C7AB /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F108175934710072C7AB /* AFXMLRequestOperation.m */; };
-		5619F153175934720072C7AB /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5619F10A175934710072C7AB /* UIImageView+AFNetworking.m */; };
 		5619F184175934950072C7AB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5619F183175934950072C7AB /* MobileCoreServices.framework */; };
 		562FE97117540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
 		562FE97217540A37004DC70D /* KMRMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562FE96F17540A37004DC70D /* KMRMHomeViewController.m */; };
@@ -75,18 +84,9 @@
 		5648D5EC17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */; };
 		5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
 		5648D5EF17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */; };
-		564FDB2D17568CCA00B637BC /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FD9AA17568CC900B637BC /* LoggerClient.m */; };
 		564FDC1417568D2C00B637BC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1317568D2C00B637BC /* CFNetwork.framework */; };
 		564FDC1617568D4600B637BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1517568D4600B637BC /* SystemConfiguration.framework */; };
 		564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */; };
-		564FDE2A175696A400B637BC /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */; };
-		564FDE2B175696A400B637BC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC38175696A200B637BC /* DDASLLogger.m */; };
-		564FDE2C175696A400B637BC /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3A175696A200B637BC /* DDFileLogger.m */; };
-		564FDE2D175696A400B637BC /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3C175696A200B637BC /* DDLog.m */; };
-		564FDE2E175696A400B637BC /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC3E175696A200B637BC /* DDTTYLogger.m */; };
-		564FDE2F175696A400B637BC /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */; };
-		564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */; };
-		564FDE31175696A400B637BC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC44175696A200B637BC /* README.txt */; };
 		564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */; };
 		56DE03321758ADCC00358046 /* KMRMLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */; };
 		56DE03331758ADCC00358046 /* KMRMLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */; };
@@ -100,11 +100,11 @@
 		56DE03401758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */; };
 		56DE03421758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */; };
 		56DE03431758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */; };
-		56E355EB175896980003272A /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E355EA175896980003272A /* SparkInspector.framework */; };
 		56E355F017589E500003272A /* lldb_utilities.py in Resources */ = {isa = PBXBuildFile; fileRef = 56E355ED17589E500003272A /* lldb_utilities.py */; };
 		56E355F117589E500003272A /* lldbinit in Resources */ = {isa = PBXBuildFile; fileRef = 56E355EE17589E500003272A /* lldbinit */; };
 		56E355F217589E500003272A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56E355EF17589E500003272A /* README.md */; };
 		56EC3B9C1758A5BC00667F2D /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 56EC3B9B1758A5BC00667F2D /* utils.py */; };
+		DF24EC1C45354513A1AB8002 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD933AEEAFB492CAD1BCDE4 /* libPods.a */; };
 		KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +119,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		5611F671178C17AF00A631A4 /* KMRMHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeCell.h; sourceTree = "<group>"; };
+		5611F672178C17AF00A631A4 /* KMRMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMHomeCell.m; sourceTree = "<group>"; };
+		5611F677178C17F300A631A4 /* KMRMInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMInterface.h; sourceTree = "<group>"; };
+		5611F678178C17F300A631A4 /* KMRMInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMInterface.m; sourceTree = "<group>"; };
+		5611F683178C187200A631A4 /* KMRMDefaultTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMDefaultTheme.h; sourceTree = "<group>"; };
+		5611F684178C187200A631A4 /* KMRMDefaultTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMDefaultTheme.m; sourceTree = "<group>"; };
+		5611F686178C187200A631A4 /* KMRMTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMTheme.h; sourceTree = "<group>"; };
+		5611F689178C188000A631A4 /* KMRMGreenTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMGreenTheme.h; sourceTree = "<group>"; };
+		5611F68A178C188000A631A4 /* KMRMGreenTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMGreenTheme.m; sourceTree = "<group>"; };
+		5611F68D178C18A300A631A4 /* KMRMHomeCell~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeCell~ipad.xib"; sourceTree = "<group>"; };
+		5611F690178C18B200A631A4 /* KMRMHomeCell~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeCell~iphone.xib"; sourceTree = "<group>"; };
+		5611F694178C1A6B00A631A4 /* KMRMBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMBaseCell.h; sourceTree = "<group>"; };
+		5611F695178C1A6B00A631A4 /* KMRMBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMBaseCell.m; sourceTree = "<group>"; };
+		5611F699178C1B0100A631A4 /* UIResponder+Kimera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Kimera.h"; sourceTree = "<group>"; };
+		5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Kimera.m"; sourceTree = "<group>"; };
+		5611F69E178C224F00A631A4 /* KMRMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMService.h; sourceTree = "<group>"; };
+		5611F69F178C224F00A631A4 /* KMRMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMService.m; sourceTree = "<group>"; };
 		56162B2D1753F52A00C7705E /* Kimera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56162B301753F52A00C7705E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		56162B321753F52A00C7705E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,25 +160,6 @@
 		56162B871753FCD000C7705E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		56162B881753FCD000C7705E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		56162B891753FCD000C7705E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5619F0F8175934710072C7AB /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
-		5619F0F9175934710072C7AB /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
-		5619F0FA175934710072C7AB /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		5619F0FB175934710072C7AB /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		5619F0FC175934710072C7AB /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
-		5619F0FD175934710072C7AB /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
-		5619F0FE175934710072C7AB /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		5619F0FF175934710072C7AB /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		5619F100175934710072C7AB /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		5619F101175934710072C7AB /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		5619F102175934710072C7AB /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		5619F103175934710072C7AB /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		5619F104175934710072C7AB /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		5619F105175934710072C7AB /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		5619F106175934710072C7AB /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		5619F107175934710072C7AB /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		5619F108175934710072C7AB /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		5619F109175934710072C7AB /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		5619F10A175934710072C7AB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		5619F183175934950072C7AB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		562FE965175407AD004DC70D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		562FE968175407AD004DC70D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
@@ -198,27 +197,9 @@
 		5648D5E717554CDB00EE9C0E /* KMRMLoggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLoggingViewController.m; sourceTree = "<group>"; };
 		5648D5E817554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~iphone.xib"; sourceTree = "<group>"; };
 		5648D5ED17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMLoggingViewController~ipad.xib"; sourceTree = "<group>"; };
-		564FD9A917568CC900B637BC /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerClient.h; sourceTree = "<group>"; };
-		564FD9AA17568CC900B637BC /* LoggerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerClient.m; sourceTree = "<group>"; };
-		564FD9AB17568CC900B637BC /* LoggerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerCommon.h; sourceTree = "<group>"; };
 		564FDC1317568D2C00B637BC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		564FDC1517568D4600B637BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme_jackie_chan.jpg; sourceTree = "<group>"; };
-		564FDC35175696A200B637BC /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		564FDC37175696A200B637BC /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		564FDC38175696A200B637BC /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		564FDC39175696A200B637BC /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		564FDC3A175696A200B637BC /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		564FDC3B175696A200B637BC /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		564FDC3C175696A200B637BC /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		564FDC3D175696A200B637BC /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		564FDC3E175696A200B637BC /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
-		564FDC40175696A200B637BC /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		564FDC42175696A200B637BC /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		564FDC44175696A200B637BC /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~iphone.xib"; sourceTree = "<group>"; };
 		56DE032F1758ADCC00358046 /* KMRMLLDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMLLDBViewController.h; sourceTree = "<group>"; };
 		56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMLLDBViewController.m; sourceTree = "<group>"; };
@@ -228,11 +209,11 @@
 		56DE033B1758FE0900358046 /* KMRMToolsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMToolsViewController.m; sourceTree = "<group>"; };
 		56DE033C1758FE0900358046 /* KMRMToolsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMToolsViewController~iphone.xib"; sourceTree = "<group>"; };
 		56DE03411758FE1400358046 /* KMRMToolsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMToolsViewController~ipad.xib"; sourceTree = "<group>"; };
-		56E355EA175896980003272A /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		56E355ED17589E500003272A /* lldb_utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lldb_utilities.py; sourceTree = "<group>"; };
 		56E355EE17589E500003272A /* lldbinit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lldbinit; sourceTree = "<group>"; };
 		56E355EF17589E500003272A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		56EC3B9B1758A5BC00667F2D /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		BAD933AEEAFB492CAD1BCDE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -249,7 +230,7 @@
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
-				56E355EB175896980003272A /* SparkInspector.framework in Frameworks */,
+				DF24EC1C45354513A1AB8002 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +247,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5611F66F178C176300A631A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5611F670178C178B00A631A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5611F671178C17AF00A631A4 /* KMRMHomeCell.h */,
+				5611F672178C17AF00A631A4 /* KMRMHomeCell.m */,
+				5611F68D178C18A300A631A4 /* KMRMHomeCell~ipad.xib */,
+				5611F690178C18B200A631A4 /* KMRMHomeCell~iphone.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5611F675178C17B700A631A4 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5611F681178C187200A631A4 /* Themes */,
+				5611F677178C17F300A631A4 /* KMRMInterface.h */,
+				5611F678178C17F300A631A4 /* KMRMInterface.m */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		5611F681178C187200A631A4 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				5611F682178C187200A631A4 /* Default */,
+				5611F685178C187200A631A4 /* Green */,
+				5611F686178C187200A631A4 /* KMRMTheme.h */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		5611F682178C187200A631A4 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				5611F683178C187200A631A4 /* KMRMDefaultTheme.h */,
+				5611F684178C187200A631A4 /* KMRMDefaultTheme.m */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		5611F685178C187200A631A4 /* Green */ = {
+			isa = PBXGroup;
+			children = (
+				5611F689178C188000A631A4 /* KMRMGreenTheme.h */,
+				5611F68A178C188000A631A4 /* KMRMGreenTheme.m */,
+			);
+			path = Green;
+			sourceTree = "<group>";
+		};
+		5611F693178C1A5100A631A4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5611F694178C1A6B00A631A4 /* KMRMBaseCell.h */,
+				5611F695178C1A6B00A631A4 /* KMRMBaseCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5611F698178C1AE900A631A4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5611F699178C1B0100A631A4 /* UIResponder+Kimera.h */,
+				5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5611F69D178C21A400A631A4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5611F69E178C224F00A631A4 /* KMRMService.h */,
+				5611F69F178C224F00A631A4 /* KMRMService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5611F6A2178C226D00A631A4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		56162B241753F52A00C7705E = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +344,7 @@
 				56162B541753F52B00C7705E /* KimeraMobileTests */,
 				56162B2F1753F52A00C7705E /* Frameworks */,
 				56162B2E1753F52A00C7705E /* Products */,
+				2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,9 +367,9 @@
 				5619F183175934950072C7AB /* MobileCoreServices.framework */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
-				56E355EA175896980003272A /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
+				BAD933AEEAFB492CAD1BCDE4 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -349,7 +421,6 @@
 		56162B6E1753F70300C7705E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5619F0F4175934710072C7AB /* AFNetworking */,
 				5648D5D417553C9500EE9C0E /* Data */,
 				56162B851753FC9100C7705E /* Images */,
 				56162B6F1753F71F00C7705E /* Localizations */,
@@ -380,6 +451,7 @@
 		56162B7F1753FC0D00C7705E /* DefaultTheme */ = {
 			isa = PBXGroup;
 			children = (
+				5611F6A2178C226D00A631A4 /* Fonts */,
 				56162B811753FC4500C7705E /* Images */,
 			);
 			path = DefaultTheme;
@@ -460,47 +532,10 @@
 			isa = PBXGroup;
 			children = (
 				5642B7261759EBD900BE5731 /* DMLogger */,
-				564FDC1C175696A200B637BC /* CocoaLumberjack */,
 				56E355EC17589E500003272A /* lldb_utilities */,
-				564FD97B17568CC800B637BC /* NSLogger */,
 				562FE964175407AD004DC70D /* TestFlightSDK */,
 			);
 			path = Vendors;
-			sourceTree = "<group>";
-		};
-		5619F0F4175934710072C7AB /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				5619F0F7175934710072C7AB /* AFNetworking */,
-			);
-			name = AFNetworking;
-			path = KimeraMobile/Vendors/AFNetworking;
-			sourceTree = SOURCE_ROOT;
-		};
-		5619F0F7175934710072C7AB /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				5619F0F8175934710072C7AB /* AFHTTPClient.h */,
-				5619F0F9175934710072C7AB /* AFHTTPClient.m */,
-				5619F0FA175934710072C7AB /* AFHTTPRequestOperation.h */,
-				5619F0FB175934710072C7AB /* AFHTTPRequestOperation.m */,
-				5619F0FC175934710072C7AB /* AFImageRequestOperation.h */,
-				5619F0FD175934710072C7AB /* AFImageRequestOperation.m */,
-				5619F0FE175934710072C7AB /* AFJSONRequestOperation.h */,
-				5619F0FF175934710072C7AB /* AFJSONRequestOperation.m */,
-				5619F100175934710072C7AB /* AFNetworkActivityIndicatorManager.h */,
-				5619F101175934710072C7AB /* AFNetworkActivityIndicatorManager.m */,
-				5619F102175934710072C7AB /* AFNetworking.h */,
-				5619F103175934710072C7AB /* AFPropertyListRequestOperation.h */,
-				5619F104175934710072C7AB /* AFPropertyListRequestOperation.m */,
-				5619F105175934710072C7AB /* AFURLConnectionOperation.h */,
-				5619F106175934710072C7AB /* AFURLConnectionOperation.m */,
-				5619F107175934710072C7AB /* AFXMLRequestOperation.h */,
-				5619F108175934710072C7AB /* AFXMLRequestOperation.m */,
-				5619F109175934710072C7AB /* UIImageView+AFNetworking.h */,
-				5619F10A175934710072C7AB /* UIImageView+AFNetworking.m */,
-			);
-			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		562FE964175407AD004DC70D /* TestFlightSDK */ = {
@@ -594,8 +629,12 @@
 		5648D5761754D8FF00EE9C0E /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5611F698178C1AE900A631A4 /* Categories */,
 				5648D5CD17553AAD00EE9C0E /* Cells */,
 				5648D5771754D90F00EE9C0E /* Controllers */,
+				5611F675178C17B700A631A4 /* Interface */,
+				5611F69D178C21A400A631A4 /* Service */,
+				5611F66F178C176300A631A4 /* Views */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -614,6 +653,8 @@
 		5648D5CD17553AAD00EE9C0E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5611F693178C1A5100A631A4 /* Base */,
+				5611F670178C178B00A631A4 /* Home */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -650,76 +691,12 @@
 			path = Logging;
 			sourceTree = "<group>";
 		};
-		564FD97B17568CC800B637BC /* NSLogger */ = {
-			isa = PBXGroup;
-			children = (
-				564FD97D17568CC800B637BC /* Client Logger */,
-			);
-			path = NSLogger;
-			sourceTree = "<group>";
-		};
-		564FD97D17568CC800B637BC /* Client Logger */ = {
-			isa = PBXGroup;
-			children = (
-				564FD98C17568CC800B637BC /* iOS */,
-			);
-			path = "Client Logger";
-			sourceTree = "<group>";
-		};
-		564FD98C17568CC800B637BC /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				564FD9A917568CC900B637BC /* LoggerClient.h */,
-				564FD9AA17568CC900B637BC /* LoggerClient.m */,
-				564FD9AB17568CC900B637BC /* LoggerCommon.h */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 		564FDC191756918F00B637BC /* Memes */ = {
 			isa = PBXGroup;
 			children = (
 				564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */,
 			);
 			path = Memes;
-			sourceTree = "<group>";
-		};
-		564FDC1C175696A200B637BC /* CocoaLumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				564FDC34175696A200B637BC /* Lumberjack */,
-			);
-			path = CocoaLumberjack;
-			sourceTree = "<group>";
-		};
-		564FDC34175696A200B637BC /* Lumberjack */ = {
-			isa = PBXGroup;
-			children = (
-				564FDC35175696A200B637BC /* DDAbstractDatabaseLogger.h */,
-				564FDC36175696A200B637BC /* DDAbstractDatabaseLogger.m */,
-				564FDC37175696A200B637BC /* DDASLLogger.h */,
-				564FDC38175696A200B637BC /* DDASLLogger.m */,
-				564FDC39175696A200B637BC /* DDFileLogger.h */,
-				564FDC3A175696A200B637BC /* DDFileLogger.m */,
-				564FDC3B175696A200B637BC /* DDLog.h */,
-				564FDC3C175696A200B637BC /* DDLog.m */,
-				564FDC3D175696A200B637BC /* DDTTYLogger.h */,
-				564FDC3E175696A200B637BC /* DDTTYLogger.m */,
-				564FDC3F175696A200B637BC /* Extensions */,
-			);
-			path = Lumberjack;
-			sourceTree = "<group>";
-		};
-		564FDC3F175696A200B637BC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				564FDC40175696A200B637BC /* ContextFilterLogFormatter.h */,
-				564FDC41175696A200B637BC /* ContextFilterLogFormatter.m */,
-				564FDC42175696A200B637BC /* DispatchQueueLogFormatter.h */,
-				564FDC43175696A200B637BC /* DispatchQueueLogFormatter.m */,
-				564FDC44175696A200B637BC /* README.txt */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		56DE032E1758ADAB00358046 /* LLDB */ = {
@@ -761,9 +738,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56162B5F1753F52B00C7705E /* Build configuration list for PBXNativeTarget "KimeraMobile" */;
 			buildPhases = (
+				D03AA15E744247199AC3D57A /* Check Pods Manifest.lock */,
 				56162B291753F52A00C7705E /* Sources */,
 				56162B2A1753F52A00C7705E /* Frameworks */,
 				56162B2B1753F52A00C7705E /* Resources */,
+				C1B8F4698D884F32B00B00C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -844,7 +823,6 @@
 				5648D5EB17554CDB00EE9C0E /* KMRMLoggingViewController~iphone.xib in Resources */,
 				5648D5EE17554CF500EE9C0E /* KMRMLoggingViewController~ipad.xib in Resources */,
 				564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */,
-				564FDE31175696A400B637BC /* README.txt in Resources */,
 				564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */,
 				5635974C17588D0F0009E155 /* KMRMArgument_summary.py in Resources */,
 				56E355F017589E500003272A /* lldb_utilities.py in Resources */,
@@ -855,6 +833,8 @@
 				56DE03371758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */,
 				56DE033F1758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */,
 				56DE03421758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */,
+				5611F68E178C18A300A631A4 /* KMRMHomeCell~ipad.xib in Resources */,
+				5611F691178C18B200A631A4 /* KMRMHomeCell~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,6 +857,8 @@
 				56DE03381758ADEF00358046 /* KMRMLLDBViewController~ipad.xib in Resources */,
 				56DE03401758FE0900358046 /* KMRMToolsViewController~iphone.xib in Resources */,
 				56DE03431758FE1400358046 /* KMRMToolsViewController~ipad.xib in Resources */,
+				5611F68F178C18A300A631A4 /* KMRMHomeCell~ipad.xib in Resources */,
+				5611F692178C18B200A631A4 /* KMRMHomeCell~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +877,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C1B8F4698D884F32B00B00C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D03AA15E744247199AC3D57A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -915,26 +927,16 @@
 				5648D5DE175542A900EE9C0E /* KMRMDataModel.m in Sources */,
 				5648D5E2175543C400EE9C0E /* KMRMBaseViewController.m in Sources */,
 				5648D5E917554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
-				564FDB2D17568CCA00B637BC /* LoggerClient.m in Sources */,
-				564FDE2A175696A400B637BC /* DDAbstractDatabaseLogger.m in Sources */,
-				564FDE2B175696A400B637BC /* DDASLLogger.m in Sources */,
-				564FDE2C175696A400B637BC /* DDFileLogger.m in Sources */,
-				564FDE2D175696A400B637BC /* DDLog.m in Sources */,
-				564FDE2E175696A400B637BC /* DDTTYLogger.m in Sources */,
-				564FDE2F175696A400B637BC /* ContextFilterLogFormatter.m in Sources */,
-				564FDE30175696A400B637BC /* DispatchQueueLogFormatter.m in Sources */,
 				56DE03321758ADCC00358046 /* KMRMLLDBViewController.m in Sources */,
 				56DE033D1758FE0900358046 /* KMRMToolsViewController.m in Sources */,
-				5619F14B175934720072C7AB /* AFHTTPClient.m in Sources */,
-				5619F14C175934720072C7AB /* AFHTTPRequestOperation.m in Sources */,
-				5619F14D175934720072C7AB /* AFImageRequestOperation.m in Sources */,
-				5619F14E175934720072C7AB /* AFJSONRequestOperation.m in Sources */,
-				5619F14F175934720072C7AB /* AFNetworkActivityIndicatorManager.m in Sources */,
-				5619F150175934720072C7AB /* AFPropertyListRequestOperation.m in Sources */,
-				5619F151175934720072C7AB /* AFURLConnectionOperation.m in Sources */,
-				5619F152175934720072C7AB /* AFXMLRequestOperation.m in Sources */,
-				5619F153175934720072C7AB /* UIImageView+AFNetworking.m in Sources */,
 				5642B72D1759EBD900BE5731 /* DMLogger.m in Sources */,
+				5611F673178C17AF00A631A4 /* KMRMHomeCell.m in Sources */,
+				5611F679178C17F300A631A4 /* KMRMInterface.m in Sources */,
+				5611F687178C187200A631A4 /* KMRMDefaultTheme.m in Sources */,
+				5611F68B178C188000A631A4 /* KMRMGreenTheme.m in Sources */,
+				5611F696178C1A6B00A631A4 /* KMRMBaseCell.m in Sources */,
+				5611F69B178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */,
+				5611F6A0178C224F00A631A4 /* KMRMService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +957,13 @@
 				5648D5EA17554CDB00EE9C0E /* KMRMLoggingViewController.m in Sources */,
 				56DE03331758ADCC00358046 /* KMRMLLDBViewController.m in Sources */,
 				56DE033E1758FE0900358046 /* KMRMToolsViewController.m in Sources */,
+				5611F674178C17AF00A631A4 /* KMRMHomeCell.m in Sources */,
+				5611F67A178C17F300A631A4 /* KMRMInterface.m in Sources */,
+				5611F688178C187200A631A4 /* KMRMDefaultTheme.m in Sources */,
+				5611F68C178C188000A631A4 /* KMRMGreenTheme.m in Sources */,
+				5611F697178C1A6B00A631A4 /* KMRMBaseCell.m in Sources */,
+				5611F69C178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */,
+				5611F6A1178C224F00A631A4 /* KMRMService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,13 +1034,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
-					"-framework",
-					SparkInspector,
-				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1065,6 +1067,7 @@
 		};
 		56162B601753F52B00C7705E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1074,11 +1077,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = Kimera;
 				WRAPPER_EXTENSION = app;
@@ -1087,6 +1085,7 @@
 		};
 		56162B611753F52B00C7705E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1096,11 +1095,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = Kimera;
 				WRAPPER_EXTENSION = app;
@@ -1161,13 +1155,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
-					"-framework",
-					SparkInspector,
-				);
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1177,22 +1164,16 @@
 		};
 		56162B931753FDC300C7705E /* AdHoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "TESTFLIGHT=1";
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-				);
-				OTHER_LDFLAGS = (
-					"-lTestFlight",
-					"-ObjC",
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = Kimera;
 				WRAPPER_EXTENSION = app;
@@ -1236,13 +1217,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
-					"-framework",
-					SparkInspector,
-				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1251,6 +1225,7 @@
 		};
 		56162B961753FDCA00C7705E /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1C6C6EE79B43119ED339AC /* ../Pods/Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1260,11 +1235,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					SparkInspector,
 				);
 				PRODUCT_NAME = Kimera;
 				WRAPPER_EXTENSION = app;

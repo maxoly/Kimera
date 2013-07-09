@@ -40,20 +40,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * kHomeCellIdentifier = @"HomeCell";
+    NSString *cellClass = NSStringFromClass([KMRMHomeCell class]);
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kHomeCellIdentifier];
+    KMRMHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:cellClass];
     
     if (nil == cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kHomeCellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:cellClass owner:nil options:nil] lastObject];
     }
     
     KMRMTopic *topic = [self.sections objectAtIndex:indexPath.section];
     KMRMArgument *argument = [topic.arguments objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = argument.name;
-    cell.detailTextLabel.text = argument.detail;
+    [cell setupWithArgument:argument];
     
     return cell;
 }
@@ -67,6 +66,11 @@
 
 
 #pragma mark - UITableViewDelegate Methods
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0f;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

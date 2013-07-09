@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "UIResponder+Kimera.h"
+#import "KMRMInterface.h"
+
 @interface KMRMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) KMRMInterface *interface;
 
 @end
