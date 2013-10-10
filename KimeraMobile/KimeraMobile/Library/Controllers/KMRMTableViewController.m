@@ -45,4 +45,9 @@
     return [[self.sections objectAtIndex:section] count];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
+}
+
 @end

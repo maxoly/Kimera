@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AFNetworking.h"
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @interface KMRMToolsViewController : UIViewController
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>80B96767-7369-4328-9428-A9EE7E99940D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kimera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D9197CC-7D35-4440-9A57-2C29B25CB1B8</key>
+		<string>git://github.com/liyanage/lldb_utilities.git</string>
+		<key>C6130372-FA23-4367-9A74-C4A086AA88B1</key>
+		<string>ssh://github.com/maxoly/Kimera.git</string>
+		<key>E807E9E6-C252-4825-ABF3-641BB40D730C</key>
+		<string>git://github.com/malcommac/DMLogger.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kimera.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D9197CC-7D35-4440-9A57-2C29B25CB1B8</key>
+		<string>../KimeraMobile/KimeraMobile/Vendors/lldb_utilities</string>
+		<key>C6130372-FA23-4367-9A74-C4A086AA88B1</key>
+		<string>..</string>
+		<key>E807E9E6-C252-4825-ABF3-641BB40D730C</key>
+		<string>../KimeraMobile/KimeraMobile/Vendors/DMLogger</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/maxoly/Kimera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6130372-FA23-4367-9A74-C4A086AA88B1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E807E9E6-C252-4825-ABF3-641BB40D730C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DMLogger</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6130372-FA23-4367-9A74-C4A086AA88B1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kimera</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D9197CC-7D35-4440-9A57-2C29B25CB1B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lldb_utilities</string>
+		</dict>
+	</array>
+</dict>
+</plist>

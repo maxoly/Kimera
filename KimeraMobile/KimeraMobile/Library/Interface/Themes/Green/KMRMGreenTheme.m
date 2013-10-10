@@ -10,12 +10,32 @@
 
 #import "KMRMTheme.h"
 
+
 @implementation KMRMGreenTheme
+
+- (id)initWithTest:(NSString *)test
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 
 - (void)configure
 {
     // navigation bar
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.000 green:0.764 blue:0.000 alpha:1.000]];
+    if (IsUIKitFlatMode())
+    {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.000 green:0.764 blue:0.000 alpha:1.000]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    }
+    else
+    {
+        [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:0.000 green:0.764 blue:0.000 alpha:1.000]];
+    }
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
 }
 
 - (void)themeLabel:(UILabel *)label type:(KMRMThemeLabelType)type
@@ -24,14 +44,30 @@
     {
         case KMRMThemeLabelTypeArgumentTitle:
         {
-            label.font = [UIFont fontWithName:@"Arial-BoldMT" size:17.0];
+            if (IsUIKitFlatMode())
+            {
+                label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+            }
+            else
+            {
+                label.font = [UIFont fontWithName:@"Arial-BoldMT" size:17.0];
+            }
+            
             label.textColor = [UIColor colorWithRed:0.000 green:0.322 blue:0.000 alpha:1.000];
         }
             break;
             
         case KMRMThemeLabelTypeArgumentDescription:
         {
-            label.font = [UIFont fontWithName:@"Arial" size:14.0f];
+            if (IsUIKitFlatMode())
+            {
+                label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+            }
+            else
+            {
+                label.font = [UIFont fontWithName:@"Arial" size:14.0f];
+            }
+            
             label.textColor = [UIColor colorWithRed:0.661 green:0.778 blue:0.215 alpha:1.000];
         }
             break;

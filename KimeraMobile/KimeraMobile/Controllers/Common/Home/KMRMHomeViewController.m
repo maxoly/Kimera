@@ -24,8 +24,11 @@
     // load topics
     [self.dataModel getTopics:^(NSArray *topics)
     {
-        self.sections = topics;
-        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^
+        {
+            self.sections = topics;
+            [self.tableView reloadData];
+        });
     }];
 }
 

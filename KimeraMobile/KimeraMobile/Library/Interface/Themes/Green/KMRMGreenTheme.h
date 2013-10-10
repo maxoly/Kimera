@@ -10,6 +10,10 @@
 
 #import "KMRMTheme.h"
 
+#import "KMRMUIKitHelper.h"
+
 @interface KMRMGreenTheme : NSObject<KMRMTheme>
+
+- (id)initWithTest:(NSString *)test;
 
 @end

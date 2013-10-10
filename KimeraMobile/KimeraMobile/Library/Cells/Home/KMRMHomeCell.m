@@ -10,6 +10,8 @@
 
 @implementation KMRMHomeCell
 
+
+
 #pragma mark - Layout Methods
 
 - (void)awakeFromNib
@@ -19,6 +21,8 @@
     [self.interface.theme themeLabel:self.argumentTitleLabel type:KMRMThemeLabelTypeArgumentTitle];
     [self.interface.theme themeLabel:self.argumentDescriptionLabel type:KMRMThemeLabelTypeArgumentDescription];
 }
+
+
 
 #pragma mark - Setup Methods
 

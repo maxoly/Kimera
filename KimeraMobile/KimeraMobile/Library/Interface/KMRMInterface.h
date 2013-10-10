@@ -12,10 +12,11 @@
 
 @interface KMRMInterface : NSObject
 
-// current theme
+// properties
 @property (nonatomic, readonly) NSObject<KMRMTheme> *theme;
+@property (nonatomic, readonly) UINavigationController *navViewController;
 
 // initializers
-- (instancetype)initWithThemeName:(NSString *)themeName;
+- (instancetype)initWithTheme:(NSObject<KMRMTheme> *)theme navViewController:(UINavigationController *)navViewController;
 
 @end

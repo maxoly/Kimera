@@ -1,6 +1,0 @@
-#include "Pods-SparkInspector.xcconfig"
-FRAMEWORK_SEARCH_PATHS =  ${PODS_SPARKINSPECTOR_FRAMEWORK_SEARCH_PATHS}
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/SparkInspector" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/SparkInspector"
-OTHER_LDFLAGS = -ObjC ${PODS_SPARKINSPECTOR_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}

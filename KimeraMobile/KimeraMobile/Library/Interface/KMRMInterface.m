@@ -10,8 +10,8 @@
 
 @interface KMRMInterface ()
 
-@property (nonatomic, copy) NSString *themeName;
 @property (nonatomic, strong) NSObject<KMRMTheme> *theme;
+@property (nonatomic, strong) UINavigationController *navViewController;
 
 @end
 
@@ -23,13 +23,16 @@
 
 #pragma mark - Init Methods
 
-- (instancetype)initWithThemeName:(NSString *)themeName
+- (instancetype)initWithTheme:(NSObject<KMRMTheme> *)theme navViewController:(UINavigationController *)navViewController
 {
     self = [super init];
     if (self)
     {
-        self.themeName = themeName;
-        [self.theme configure];
+        self.theme = theme;
+        self.navViewController = navViewController;
+        
+        [self setup];
+    
     }
     
     return self;
@@ -37,16 +40,13 @@
 
 
 
-#pragma mark - Custom Properties
+#pragma mark - Configure
 
-- (NSObject<KMRMTheme> *)theme
+- (void)setup
 {
-    if (!_theme)
-    {
-        _theme = [[NSClassFromString(self.themeName) alloc] init];
-    }
-    
-    return _theme;
+    [self.theme configure];
+    [self.navViewController.navigationBar setBarStyle:UIBarStyleDefault];
+    [self.navViewController.navigationBar setTranslucent:NO];
 }
 
 @end

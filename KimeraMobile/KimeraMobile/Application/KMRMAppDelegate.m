@@ -17,6 +17,10 @@
 #import "TestFlight.h"
 #endif
 
+#import "KMRMServiceLocator.h"
+#import "KMRMGreenTheme.h"
+#import "KMRMDefaultTheme.h"
+
 @implementation KMRMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -36,11 +40,23 @@
 #endif
     
     
-    self.interface = [[KMRMInterface alloc] initWithThemeName:@"KMRMGreenTheme"];
+    // Service Locator
+    KMRMServiceLocator *serviceLocator = [[KMRMServiceLocator alloc] init];
+    [serviceLocator registerProtocol:@protocol(KMRMTheme) withClass:[KMRMGreenTheme class]];
+    
+    
+    // Theme & Root Controller
+    NSObject<KMRMTheme> *theme = [serviceLocator getServiceWithProtocol:@protocol(KMRMTheme)];
+    UINavigationController *navController =  [[UINavigationController alloc] initWithRootViewController:[[KMRMHomeViewController alloc] init]];
+    
+    
+    // Init Interface
+    self.interface = [[KMRMInterface alloc] initWithTheme:theme navViewController:navController];
 
     
+    // Init Window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[KMRMHomeViewController alloc] init]];
+    self.window.rootViewController = navController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

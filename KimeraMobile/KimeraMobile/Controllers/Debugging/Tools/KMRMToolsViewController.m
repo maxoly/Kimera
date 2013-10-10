@@ -38,10 +38,20 @@
 {
     NSURL *url = [NSURL URLWithString:@"https://alpha-api.app.net/stream/0/posts/stream/global"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        NSLog(@"App.net Global Stream: %@", JSON);
-    } failure:nil];
-    [operation start];
+    
+    AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    op.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject)
+    {
+        NSLog(@"App.net Global Stream: %@", responseObject);
+    }
+    failure:^(AFHTTPRequestOperation *operation, NSError *error)
+    {
+        NSLog(@"Error: %@", error);
+    }];
+    
+    [[NSOperationQueue mainQueue] addOperation:op];
 }
 
 - (IBAction)googleTouched:(id)sender

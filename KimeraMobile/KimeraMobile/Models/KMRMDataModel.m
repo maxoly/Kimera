@@ -12,8 +12,6 @@
 
 - (void)getTopics:(KMRMDataModelTopicsCompletion)completion
 {
-    dispatch_queue_t callerQueue = dispatch_get_current_queue();
-    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^
     {
         NSMutableArray *topics = [[NSMutableArray alloc] init];
@@ -38,10 +36,10 @@
             [topics addObject:topic];
         }
         
-        dispatch_async(callerQueue, ^
+        if (completion)
         {
             completion(topics);
-        });
+        }
     });
 }
 
