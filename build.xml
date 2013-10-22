@@ -263,7 +263,7 @@
     <!-- ####################################### -->
     <target name="repo-add-version" description="">
         <exec executable="curl" failOnError="true">
-            <arg line="-u {app.repo.user}"/>
+            <arg line="-u ${app.repo.user}"/>
             <arg line="${app.repo.api}/issues/versions/"/>
             <arg line="-F name='${NewTagName}'"/>
         </exec>
