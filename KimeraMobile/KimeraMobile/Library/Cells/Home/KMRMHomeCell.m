@@ -18,6 +18,8 @@
 {
     [super awakeFromNib];
     
+
+    
     [self.interface.theme themeLabel:self.argumentTitleLabel type:KMRMThemeLabelTypeArgumentTitle];
     [self.interface.theme themeLabel:self.argumentDescriptionLabel type:KMRMThemeLabelTypeArgumentDescription];
 }

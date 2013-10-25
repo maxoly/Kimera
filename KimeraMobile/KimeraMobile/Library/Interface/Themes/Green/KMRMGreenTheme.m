@@ -13,15 +13,6 @@
 
 @implementation KMRMGreenTheme
 
-- (id)initWithTest:(NSString *)test
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (void)configure
 {
     // navigation bar

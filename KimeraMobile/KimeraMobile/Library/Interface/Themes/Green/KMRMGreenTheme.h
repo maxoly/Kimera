@@ -14,6 +14,5 @@
 
 @interface KMRMGreenTheme : NSObject<KMRMTheme>
 
-- (id)initWithTest:(NSString *)test;
 
 @end

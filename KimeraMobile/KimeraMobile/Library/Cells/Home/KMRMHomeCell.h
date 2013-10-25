@@ -12,6 +12,7 @@
 #import "KMRMArgument.h"
 
 @interface KMRMHomeCell : KMRMBaseCell
+
 @property (weak, nonatomic) IBOutlet UILabel *argumentTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *argumentDescriptionLabel;
 
