@@ -72,6 +72,6 @@ Orientations                        only Landscape
 Language                            Objective-C 2.0
 Memory Managment                    ARC (Automatic Reference Counting)
 Target iOS                          5.0
-3th Part Library Managment          CocoaPods
+Third-part libraries Managment      CocoaPods
 Networking framework                RestKit
 ```
