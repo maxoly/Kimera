@@ -205,7 +205,7 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
     if (userAgent) {
         if (![userAgent canBeConvertedToEncoding:NSASCIIStringEncoding]) {
             NSMutableString *mutableUserAgent = [userAgent mutableCopy];
-            CFStringTransform((__bridge CFMutableStringRef)(mutableUserAgent), NULL, kCFStringTransformToLatin, false);
+            CFStringTransform((__bridge CFMutableStringRef)(mutableUserAgent), NULL, (__bridge CFStringRef)@"Any-Latin; Latin-ASCII; [:^ASCII:] Remove", false);
             userAgent = mutableUserAgent;
         }
         [self setValue:userAgent forHTTPHeaderField:@"User-Agent"];
@@ -285,20 +285,20 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
     __block AFStreamingMultipartFormData *formData = [[AFStreamingMultipartFormData alloc] initWithURLRequest:request stringEncoding:NSUTF8StringEncoding];
 
     if (parameters) {
-        [parameters enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL * __unused stop) {
+        for (AFQueryStringPair *pair in AFQueryStringPairsFromDictionary(parameters)) {
             NSData *data = nil;
-            if ([obj isKindOfClass:[NSData class]]) {
-                data = obj;
-            } else if ([obj isEqual:[NSNull null]]) {
+            if ([pair.value isKindOfClass:[NSData class]]) {
+                data = pair.value;
+            } else if ([pair.value isEqual:[NSNull null]]) {
                 data = [NSData data];
             } else {
-                data = [[obj description] dataUsingEncoding:NSUTF8StringEncoding];
+                data = [[pair.value description] dataUsingEncoding:self.stringEncoding];
             }
 
             if (data) {
-                [formData appendPartWithFormData:data name:[key description]];
+                [formData appendPartWithFormData:data name:[pair.field description]];
             }
-        }];
+        }
     }
 
     if (block) {
@@ -319,7 +319,9 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
     NSMutableURLRequest *mutableRequest = [request mutableCopy];
 
     [self.HTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id field, id value, BOOL * __unused stop) {
-        [mutableRequest setValue:value forHTTPHeaderField:field];
+        if (![request valueForHTTPHeaderField:field]) {
+            [mutableRequest setValue:value forHTTPHeaderField:field];
+        }
     }];
 
     if (!parameters) {
@@ -1034,7 +1036,9 @@ typedef enum {
     NSMutableURLRequest *mutableRequest = [request mutableCopy];
 
     [self.HTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id field, id value, BOOL * __unused stop) {
-        [mutableRequest setValue:value forHTTPHeaderField:field];
+        if (![request valueForHTTPHeaderField:field]) {
+            [mutableRequest setValue:value forHTTPHeaderField:field];
+        }
     }];
     
     if (!parameters) {
@@ -1084,7 +1088,9 @@ typedef enum {
     NSMutableURLRequest *mutableRequest = [request mutableCopy];
 
     [self.HTTPRequestHeaders enumerateKeysAndObjectsUsingBlock:^(id field, id value, BOOL * __unused stop) {
-        [mutableRequest setValue:value forHTTPHeaderField:field];
+        if (![request valueForHTTPHeaderField:field]) {
+            [mutableRequest setValue:value forHTTPHeaderField:field];
+        }
     }];
 
     NSString *charset = (__bridge NSString *)CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
