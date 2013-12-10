@@ -1,4 +1,4 @@
-<project name="The Dog Diary" default="debug" basedir=".">
+<project name="Kimera" default="debug" basedir=".">
     
     <description>
         Massimo Oliviero - Kimera, an iOS sample application.

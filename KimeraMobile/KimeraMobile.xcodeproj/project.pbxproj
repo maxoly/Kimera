@@ -1096,9 +1096,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2532A25D44C747F3994DBE0B /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1106,6 +1108,7 @@
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
 				);
 				PRODUCT_NAME = Kimera;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1114,9 +1117,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2532A25D44C747F3994DBE0B /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1124,6 +1129,7 @@
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
 				);
 				PRODUCT_NAME = Kimera;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

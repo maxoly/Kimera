@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.0.1):
     - AFNetworking/NSURLConnection
   - CocoaLumberjack (1.6.2)
+  - MBProgressHUD (0.8)
   - NSLogger (1.1)
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
+  - MBProgressHUD
   - NSLogger
 
 SPEC CHECKSUMS:
   AFNetworking: a6f11ac4ac087303e6ff87adc1ba57b0dac20ef8
   CocoaLumberjack: d73e1e317ced14ab930797dda6c17156ff17aaa1
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   NSLogger: 4567fef08d0db18a89cce91b2053823fc0950738
 
 COCOAPODS: 0.26.2
