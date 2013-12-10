@@ -1,7 +1,9 @@
 language: objective-c
 
 before_install:
+    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
     - brew update
     - brew uninstall xctool && brew install xctool --HEAD
+    - pod install
 
 script:  xctool -workspace Kimera.xcworkspace -scheme KimeraMobile -configuration Release -sdk iphonesimulator clean build
