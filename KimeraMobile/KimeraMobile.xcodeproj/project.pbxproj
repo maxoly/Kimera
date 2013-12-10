@@ -25,7 +25,6 @@
 		5611F69C178C1B0100A631A4 /* UIResponder+Kimera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69A178C1B0100A631A4 /* UIResponder+Kimera.m */; };
 		5611F6A0178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
 		5611F6A1178C224F00A631A4 /* KMRMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611F69F178C224F00A631A4 /* KMRMService.m */; };
-		5611F6A3178C30A600A631A4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 562FE965175407AD004DC70D /* libTestFlight.a */; };
 		56162B311753F52A00C7705E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B301753F52A00C7705E /* UIKit.framework */; };
 		56162B331753F52A00C7705E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B321753F52A00C7705E /* Foundation.framework */; };
 		56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56162B341753F52A00C7705E /* CoreGraphics.framework */; };
@@ -108,7 +107,7 @@
 		56E355F117589E500003272A /* lldbinit in Resources */ = {isa = PBXBuildFile; fileRef = 56E355EE17589E500003272A /* lldbinit */; };
 		56E355F217589E500003272A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56E355EF17589E500003272A /* README.md */; };
 		56EC3B9C1758A5BC00667F2D /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 56EC3B9B1758A5BC00667F2D /* utils.py */; };
-		DD03A6C4CB024725BA923505 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD933AEEAFB492CAD1BCDE4 /* libPods.a */; };
+		69661FCB43714042A8D55B6C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD933AEEAFB492CAD1BCDE4 /* libPods.a */; };
 		KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,7 +122,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2532A25D44C747F3994DBE0B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		5611F671178C17AF00A631A4 /* KMRMHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeCell.h; sourceTree = "<group>"; };
 		5611F672178C17AF00A631A4 /* KMRMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMHomeCell.m; sourceTree = "<group>"; };
 		5611F677178C17F300A631A4 /* KMRMInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMInterface.h; sourceTree = "<group>"; };
@@ -165,8 +163,6 @@
 		56162B881753FCD000C7705E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		56162B891753FCD000C7705E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5619F183175934950072C7AB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		562FE965175407AD004DC70D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		562FE968175407AD004DC70D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		562FE96E17540A37004DC70D /* KMRMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMHomeViewController.h; sourceTree = "<group>"; };
 		562FE96F17540A37004DC70D /* KMRMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMHomeViewController.m; sourceTree = "<group>"; };
 		562FE97017540A37004DC70D /* KMRMHomeViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMHomeViewController~iphone.xib"; sourceTree = "<group>"; };
@@ -179,6 +175,12 @@
 		5635974B17588D0F0009E155 /* KMRMArgument_summary.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = KMRMArgument_summary.py; sourceTree = "<group>"; };
 		5642B7291759EBD900BE5731 /* DMLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLogger.h; sourceTree = "<group>"; };
 		5642B72A1759EBD900BE5731 /* DMLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLogger.m; sourceTree = "<group>"; };
+		56485EA318572E3200CE00BD /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		56485EA418572E3200CE00BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		56485EA518572E3200CE00BD /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
+		56485EA618572E3200CE00BD /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		56485EA718572E3200CE00BD /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		56485EA818572E3200CE00BD /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		5648D5621754D83A00EE9C0E /* KMRMBreakpointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMBreakpointsViewController.h; sourceTree = "<group>"; };
 		5648D5631754D83A00EE9C0E /* KMRMBreakpointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMBreakpointsViewController.m; sourceTree = "<group>"; };
 		5648D5691754D84E00EE9C0E /* KMRMBreakpointsViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~ipad.xib"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		56E355EE17589E500003272A /* lldbinit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lldbinit; sourceTree = "<group>"; };
 		56E355EF17589E500003272A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		56EC3B9B1758A5BC00667F2D /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BAD933AEEAFB492CAD1BCDE4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -239,9 +242,8 @@
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
-				5611F6A3178C30A600A631A4 /* libTestFlight.a in Frameworks */,
 				566E60C3178C928D002A5753 /* SparkInspector.framework in Frameworks */,
-				DD03A6C4CB024725BA923505 /* libPods.a in Frameworks */,
+				69661FCB43714042A8D55B6C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +359,7 @@
 				56162B541753F52B00C7705E /* KimeraMobileTests */,
 				56162B2F1753F52A00C7705E /* Frameworks */,
 				56162B2E1753F52A00C7705E /* Products */,
-				2532A25D44C747F3994DBE0B /* Pods.xcconfig */,
+				9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -545,21 +547,11 @@
 		56162B911753FD4B00C7705E /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				56485EA218572E3200CE00BD /* TestFlightSDK */,
 				5642B7261759EBD900BE5731 /* DMLogger */,
 				56E355EC17589E500003272A /* lldb_utilities */,
-				562FE964175407AD004DC70D /* TestFlightSDK */,
 			);
 			path = Vendors;
-			sourceTree = "<group>";
-		};
-		562FE964175407AD004DC70D /* TestFlightSDK */ = {
-			isa = PBXGroup;
-			children = (
-				562FE965175407AD004DC70D /* libTestFlight.a */,
-				562FE968175407AD004DC70D /* TestFlight.h */,
-			);
-			name = TestFlightSDK;
-			path = TestFlightSDK1.2.5;
 			sourceTree = "<group>";
 		};
 		562FE96C17540A06004DC70D /* Common */ = {
@@ -627,6 +619,19 @@
 				5642B72A1759EBD900BE5731 /* DMLogger.m */,
 			);
 			path = DMLogger;
+			sourceTree = "<group>";
+		};
+		56485EA218572E3200CE00BD /* TestFlightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				56485EA318572E3200CE00BD /* libTestFlight.a */,
+				56485EA418572E3200CE00BD /* README.md */,
+				56485EA518572E3200CE00BD /* release_notes.md */,
+				56485EA618572E3200CE00BD /* TestFlight+AsyncLogging.h */,
+				56485EA718572E3200CE00BD /* TestFlight+ManualSessions.h */,
+				56485EA818572E3200CE00BD /* TestFlight.h */,
+			);
+			path = TestFlightSDK;
 			sourceTree = "<group>";
 		};
 		5648D5611754D80800EE9C0E /* Breakpoints */ = {
@@ -762,11 +767,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56162B5F1753F52B00C7705E /* Build configuration list for PBXNativeTarget "KimeraMobile" */;
 			buildPhases = (
-				8BB5BF170A4444DCABB68DC8 /* Check Pods Manifest.lock */,
+				07792F4A29854274BFBD3A50 /* Check Pods Manifest.lock */,
 				56162B291753F52A00C7705E /* Sources */,
 				56162B2A1753F52A00C7705E /* Frameworks */,
 				56162B2B1753F52A00C7705E /* Resources */,
-				2714BB9CD7D34A7AB90885F4 /* Copy Pods Resources */,
+				472000C55F5C4DF0A6644368 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -889,7 +894,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2714BB9CD7D34A7AB90885F4 /* Copy Pods Resources */ = {
+		07792F4A29854274BFBD3A50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		472000C55F5C4DF0A6644368 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -916,21 +936,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		8BB5BF170A4444DCABB68DC8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1094,7 +1099,7 @@
 		};
 		56162B601753F52B00C7705E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2532A25D44C747F3994DBE0B /* Pods.xcconfig */;
+			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
@@ -1105,7 +1110,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Kimera;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1115,7 +1120,7 @@
 		};
 		56162B611753F52B00C7705E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2532A25D44C747F3994DBE0B /* Pods.xcconfig */;
+			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
@@ -1126,7 +1131,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK1.2.5\"",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",
 				);
 				PRODUCT_NAME = Kimera;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1168,6 +1173,78 @@
 			};
 			name = Release;
 		};
+		56485E9F18572A8E00CE00BD /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		56485EA018572A8E00CE00BD /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
+			buildSettings = {
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TESTFLIGHT=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lTestFlight",
+				);
+				PRODUCT_NAME = Kimera;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		56485EA118572A8E00CE00BD /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KimeraMobile.app/KimeraMobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KimeraMobile/KimeraMobile-Prefix.pch";
+				INFOPLIST_FILE = "KimeraMobileTests/KimeraMobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1176,6 +1253,7 @@
 			buildConfigurations = (
 				56162B5D1753F52B00C7705E /* Debug */,
 				56162B5E1753F52B00C7705E /* Release */,
+				56485E9F18572A8E00CE00BD /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1185,6 +1263,7 @@
 			buildConfigurations = (
 				56162B601753F52B00C7705E /* Debug */,
 				56162B611753F52B00C7705E /* Release */,
+				56485EA018572A8E00CE00BD /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1194,6 +1273,7 @@
 			buildConfigurations = (
 				56162B631753F52B00C7705E /* Debug */,
 				56162B641753F52B00C7705E /* Release */,
+				56485EA118572A8E00CE00BD /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
