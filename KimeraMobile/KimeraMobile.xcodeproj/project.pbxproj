@@ -1102,7 +1102,10 @@
 			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_STATIC_ANALYZER_MODE = deep;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -1123,7 +1126,10 @@
 			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_STATIC_ANALYZER_MODE = deep;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -1204,7 +1210,10 @@
 			baseConfigurationReference = 9B3FD53811CE48EF87D7B0DC /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_STATIC_ANALYZER_MODE = deep;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/KimeraMobile/Vendors\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/KimeraMobile/Vendors\"",
+				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";

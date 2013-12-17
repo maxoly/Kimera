@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Massimo Oliviero. All rights reserved.
 //
 
+#import <BugSense-iOS/BugSenseController.h>
+
+
 #if DEBUG
 #import <SparkInspector/SparkInspector.h>
 #endif
@@ -29,6 +32,8 @@
     #if DEBUG
     [SparkInspector enableObservation];
     #endif
+    
+    [BugSenseController sharedControllerWithBugSenseAPIKey:@"9b789d60"];
     
     
     KMRLog(@"...starting");

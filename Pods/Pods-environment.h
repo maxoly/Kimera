@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 0
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
 
+// BugSense
+#define COCOAPODS_POD_AVAILABLE_BugSense
+#define COCOAPODS_VERSION_MAJOR_BugSense 3
+#define COCOAPODS_VERSION_MINOR_BugSense 5
+#define COCOAPODS_VERSION_PATCH_BugSense 1
+
 // CocoaLumberjack
 #define COCOAPODS_POD_AVAILABLE_CocoaLumberjack
 // This library does not follow semantic-versioning,

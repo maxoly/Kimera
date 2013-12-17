@@ -1,4 +1,5 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/BugSense/"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/NSLogger"
-OTHER_LDFLAGS = -ObjC -framework CFNetwork -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BugSense" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/NSLogger" $(SDKROOT)/usr/include/libz
+OTHER_LDFLAGS = -ObjC -lz -framework BugSense-iOS -framework CFNetwork -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration
 PODS_ROOT = ${SRCROOT}/../Pods

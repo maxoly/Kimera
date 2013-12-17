@@ -18,36 +18,6 @@
             endingLineNumber = "56"
             landmarkName = "-conditionalTouched:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController conditionalTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.706991"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "266">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController conditionalTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.707343"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "307">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,50 +48,6 @@
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController loggingTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.707663"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "373">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController loggingTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.707899"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "422">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController loggingTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.708074"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "461">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -147,50 +73,6 @@
                   </ActionContent>
                </BreakpointActionProxy>
             </Actions>
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController debuggerTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.708263"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "373">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController debuggerTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.708429"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "422">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[KMRMBreakpointsViewController debuggerTouched:]"
-                  moduleName = "Kimera"
-                  urlString = "file:///Users/massimo/Dropbox/Projects/Massimo/Personal/Kimera/KimeraMobile/KimeraMobile/Controllers/Debugging/Breakpoints/KMRMBreakpointsViewController.m"
-                  timestampString = "408366549.708601"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "461">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
