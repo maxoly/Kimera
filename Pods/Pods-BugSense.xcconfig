@@ -1,0 +1,3 @@
+PODS_BUGSENSE_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/BugSense/BugSense 3.6"
+PODS_BUGSENSE_HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libz
+PODS_BUGSENSE_OTHER_LDFLAGS = -lz -framework BugSense-iOS -framework SystemConfiguration

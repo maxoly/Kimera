@@ -1,44 +1,44 @@
 PODS:
-  - AFNetworking (2.0.3):
+  - AFNetworking (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
     - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.0.3):
+  - AFNetworking/NSURLConnection (2.2.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.0.3):
+  - AFNetworking/NSURLSession (2.2.1):
     - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.0.3)
-  - AFNetworking/Security (2.0.3)
-  - AFNetworking/Serialization (2.0.3)
-  - AFNetworking/UIKit (2.0.3):
+  - AFNetworking/Reachability (2.2.1)
+  - AFNetworking/Security (2.2.1)
+  - AFNetworking/Serialization (2.2.1)
+  - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
-  - BugSense (3.5.1)
-  - CocoaLumberjack (1.6.5.1):
-    - CocoaLumberjack/Core
+    - AFNetworking/NSURLSession
+  - BugSense (3.6)
+  - CocoaLumberjack (1.8.1):
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.6.5.1)
-  - CocoaLumberjack/Extensions (1.6.5.1):
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
     - CocoaLumberjack/Core
   - MBProgressHUD (0.8)
-  - NSLogger (1.1)
+  - NSLogger (1.2)
 
 DEPENDENCIES:
   - AFNetworking
-  - BugSense (~> 3.5.1)
+  - BugSense
   - CocoaLumberjack
   - MBProgressHUD
   - NSLogger
 
 SPEC CHECKSUMS:
-  AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
-  BugSense: d6c7be4f7edef7ac0d3867a0aa83bc339587a9b2
-  CocoaLumberjack: 17803afbade3126a377d32b8d23367264b44ced6
+  AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  BugSense: 03b6b614445b43a555763103b4944fd7a716f5b1
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
-  NSLogger: 4567fef08d0db18a89cce91b2053823fc0950738
+  NSLogger: 9607fdeafd0b09922c69615f99f127de45971b8f
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.29.0
