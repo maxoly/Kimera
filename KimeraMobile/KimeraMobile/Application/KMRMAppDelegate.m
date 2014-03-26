@@ -9,9 +9,6 @@
 #import <BugSense-iOS/BugSenseController.h>
 
 
-#if DEBUG
-#import <SparkInspector/SparkInspector.h>
-#endif
 #import "KMRMAppDelegate.h"
 
 #import "KMRMHomeViewController.h"
@@ -27,12 +24,7 @@
 @implementation KMRMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Enable the Spark Inspector
-    #if DEBUG
-    [SparkInspector enableObservation];
-    #endif
-    
+{    
     [BugSenseController sharedControllerWithBugSenseAPIKey:@"9b789d60"];
     
     

@@ -88,7 +88,6 @@
 		564FDC1617568D4600B637BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FDC1517568D4600B637BC /* SystemConfiguration.framework */; };
 		564FDC1B1756925B00B637BC /* meme_jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */; };
 		564FDF411756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */; };
-		566E60C3178C928D002A5753 /* SparkInspector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E60C2178C928D002A5753 /* SparkInspector.framework */; };
 		568F2B0C180608120040ED39 /* KMRMServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 568F2B0B180608120040ED39 /* KMRMServiceLocator.m */; };
 		568F2B0F18060A620040ED39 /* KMRMUIKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 568F2B0E18060A620040ED39 /* KMRMUIKitHelper.m */; };
 		56DE03321758ADCC00358046 /* KMRMLLDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DE03301758ADCC00358046 /* KMRMLLDBViewController.m */; };
@@ -207,7 +206,6 @@
 		564FDC1517568D4600B637BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		564FDC1A1756925B00B637BC /* meme_jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meme_jackie_chan.jpg; sourceTree = "<group>"; };
 		564FDF401756A89D00B637BC /* KMRMBreakpointsViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "KMRMBreakpointsViewController~iphone.xib"; sourceTree = "<group>"; };
-		566E60C2178C928D002A5753 /* SparkInspector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SparkInspector.framework; path = KimeraMobile/Vendors/SparkInspector.framework; sourceTree = "<group>"; };
 		568F2B0A180608120040ED39 /* KMRMServiceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMServiceLocator.h; sourceTree = "<group>"; };
 		568F2B0B180608120040ED39 /* KMRMServiceLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMRMServiceLocator.m; sourceTree = "<group>"; };
 		568F2B0D18060A620040ED39 /* KMRMUIKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMRMUIKitHelper.h; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 				56162B331753F52A00C7705E /* Foundation.framework in Frameworks */,
 				56162B351753F52A00C7705E /* CoreGraphics.framework in Frameworks */,
 				KIYDQKWBMRKIEYEVRWSLKUDQ /* QuartzCore.framework in Frameworks */,
-				566E60C3178C928D002A5753 /* SparkInspector.framework in Frameworks */,
 				69661FCB43714042A8D55B6C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +380,6 @@
 				5619F183175934950072C7AB /* MobileCoreServices.framework */,
 				HYXIFWTDXJPPRRMDCEPMDTJH /* QuartzCore.framework */,
 				56162B4E1753F52B00C7705E /* SenTestingKit.framework */,
-				566E60C2178C928D002A5753 /* SparkInspector.framework */,
 				564FDC1517568D4600B637BC /* SystemConfiguration.framework */,
 				56162B301753F52A00C7705E /* UIKit.framework */,
 			);
@@ -808,6 +804,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KMRM;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Massimo Oliviero";
 			};
@@ -1110,7 +1107,7 @@
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",
@@ -1134,7 +1131,7 @@
 				GCC_PREFIX_HEADER = "KimeraMobile/Application/KimeraMobile-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",
@@ -1223,7 +1220,7 @@
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "KimeraMobile/Application/KimeraMobile-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/KimeraMobile/Vendors/TestFlightSDK\"",

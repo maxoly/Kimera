@@ -46,7 +46,7 @@
     
     [array release];
 
-    NSLog(@"Count: %i", [array count]); // ARGGH!!
+    NSLog(@"Count: %lu", (unsigned long)[array count]); // ARGGH!!
     
     // Solutions:
     // 1. Product > Scheme > Edit Scheme > Diagnostics > Enable Zombie Objects

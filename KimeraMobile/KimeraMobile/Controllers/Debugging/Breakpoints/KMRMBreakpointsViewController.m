@@ -68,7 +68,7 @@
         sum += [element integerValue];
     }
     
-    NSLog(@"sum: %i", sum);
+    NSLog(@"sum: %li", (long)sum);
     
     CGFloat avg = sum / array.count;
     
@@ -86,7 +86,7 @@
         sum += [element integerValue];
     }
     
-    NSLog(@"sum: %i", sum);
+    NSLog(@"sum: %li", (long)sum);
 }
 
 - (IBAction)soundTouched:(id)sender
@@ -106,7 +106,7 @@
         sum += [element integerValue];
     }
     
-    NSLog(@"sum: %i", sum);
+    NSLog(@"sum: %li", (long)sum);
     
     // little issue!
 }
